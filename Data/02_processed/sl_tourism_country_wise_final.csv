@@ -6899,7 +6899,6 @@ Date,Country,Arrivals
 2020-12-01,Yemen,0
 2020-12-01,Zambia,0
 2020-12-01,Zimbabwe,0
-2021-01-01,A,0
 2021-01-01,Afghanistan,0
 2021-01-01,Albania,0
 2021-01-01,Algeria,0
@@ -6911,7 +6910,6 @@ Date,Country,Arrivals
 2021-01-01,Australia,3
 2021-01-01,Austria,5
 2021-01-01,Azerbaijan,0
-2021-01-01,B,0
 2021-01-01,Bahamas,0
 2021-01-01,Bahrain,0
 2021-01-01,Bangladesh,0
@@ -6929,7 +6927,6 @@ Date,Country,Arrivals
 2021-01-01,Bulgaria,0
 2021-01-01,Burundi,0
 2021-01-01,Burkina Faso,0
-2021-01-01,C,0
 2021-01-01,Cambodia,0
 2021-01-01,Cameroon,0
 2021-01-01,Canada,17
@@ -6947,12 +6944,10 @@ Date,Country,Arrivals
 2021-01-01,Cuba,0
 2021-01-01,Cyprus,0
 2021-01-01,Czech Republic,0
-2021-01-01,D,0
 2021-01-01,Denmark,0
 2021-01-01,Djibouti,0
 2021-01-01,Dominica,0
 2021-01-01,Dominican Republic,0
-2021-01-01,E,0
 2021-01-01,Ecuador,0
 2021-01-01,Egypt,0
 2021-01-01,El Salvador,0
@@ -6960,12 +6955,9 @@ Date,Country,Arrivals
 2021-01-01,Eritrea,0
 2021-01-01,Estonia,0
 2021-01-01,Ethiopia,0
-2021-01-01,European Union,0
-2021-01-01,F,0
 2021-01-01,Fiji,0
 2021-01-01,Finland,0
 2021-01-01,France,4
-2021-01-01,G,0
 2021-01-01,Gambia,0
 2021-01-01,Gabon,0
 2021-01-01,Georgia,0
@@ -6976,12 +6968,10 @@ Date,Country,Arrivals
 2021-01-01,Guatemala,0
 2021-01-01,Guinea-Bissau,0
 2021-01-01,Guyana,0
-2021-01-01,H,0
 2021-01-01,Haiti,0
 2021-01-01,Honduras,0
 2021-01-01,Hong Kong,0
 2021-01-01,Hungary,0
-2021-01-01,I,0
 2021-01-01,Iceland,0
 2021-01-01,India,17
 2021-01-01,Indonesia,3
@@ -6991,17 +6981,14 @@ Date,Country,Arrivals
 2021-01-01,Isle Of Man,0
 2021-01-01,Israel,0
 2021-01-01,Italy,2
-2021-01-01,J,0
 2021-01-01,Jamaica,0
 2021-01-01,Japan,1
 2021-01-01,Jordan,0
-2021-01-01,K,0
 2021-01-01,Kazakhstan,1
 2021-01-01,Kenya,0
 2021-01-01,Kosovo,0
 2021-01-01,Kuwait,0
 2021-01-01,Kyrgyzstan,0
-2021-01-01,L,0
 2021-01-01,Laos,0
 2021-01-01,Latvia,1
 2021-01-01,Lebanon,0
@@ -7011,7 +6998,6 @@ Date,Country,Arrivals
 2021-01-01,Liechtenstein,0
 2021-01-01,Lithuania,0
 2021-01-01,Luxembourg,0
-2021-01-01,M,0
 2021-01-01,Macedonia,0
 2021-01-01,Madagascar,0
 2021-01-01,Malawi,0
@@ -7030,7 +7016,6 @@ Date,Country,Arrivals
 2021-01-01,Morocco,0
 2021-01-01,Mozambique,0
 2021-01-01,Myanmar,1
-2021-01-01,N,0
 2021-01-01,Namibia,0
 2021-01-01,Nauru,0
 2021-01-01,Nepal,0
@@ -7039,9 +7024,7 @@ Date,Country,Arrivals
 2021-01-01,Nigeria,0
 2021-01-01,Niger,0
 2021-01-01,Norway,0
-2021-01-01,O,0
 2021-01-01,Oman,0
-2021-01-01,P,0
 2021-01-01,Pakistan,0
 2021-01-01,Palestinian Territories,0
 2021-01-01,Panama,0
@@ -7051,14 +7034,11 @@ Date,Country,Arrivals
 2021-01-01,Philippines,6
 2021-01-01,Poland,0
 2021-01-01,Portugal,0
-2021-01-01,Q,0
 2021-01-01,Qatar,0
-2021-01-01,R,0
 2021-01-01,Zimbabwe,0
 2021-01-01,Romania,0
 2021-01-01,Russian Federation,20
 2021-01-01,Rwanda,0
-2021-01-01,S,0
 2021-01-01,Saint Kitts And Nevis,0
 2021-01-01,Saint Lucia,0
 2021-01-01,Saint Vincent And The Grenadines,0
@@ -7083,7 +7063,6 @@ Date,Country,Arrivals
 2021-01-01,Sweden,0
 2021-01-01,Switzerland,3
 2021-01-01,Syrian Arab Republic,0
-2021-01-01,T,0
 2021-01-01,Taiwan,0
 2021-01-01,Tajikistan,0
 2021-01-01,Tanzania,0
@@ -7095,7 +7074,6 @@ Date,Country,Arrivals
 2021-01-01,Tunisia,0
 2021-01-01,Turkey,1
 2021-01-01,Turkmenistan,0
-2021-01-01,U,0
 2021-01-01,Uganda,0
 2021-01-01,Ukraine,1460
 2021-01-01,United Arab Emirates,0
@@ -7103,16 +7081,12 @@ Date,Country,Arrivals
 2021-01-01,United States,10
 2021-01-01,Uruguay,0
 2021-01-01,Uzbekistan,0
-2021-01-01,V,0
 2021-01-01,Vanuatu,0
 2021-01-01,Venezuela,0
 2021-01-01,Vietnam,0
-2021-01-01,Y,0
 2021-01-01,Yemen,0
-2021-01-01,Z,0
 2021-01-01,Zambia,0
 2021-01-01,Zimbabwe,0
-2021-02-01,A,0
 2021-02-01,Afghanistan,0
 2021-02-01,Albania,0
 2021-02-01,Algeria,0
@@ -7124,7 +7098,6 @@ Date,Country,Arrivals
 2021-02-01,Australia,24
 2021-02-01,Austria,19
 2021-02-01,Azerbaijan,2
-2021-02-01,B,0
 2021-02-01,Bahamas,0
 2021-02-01,Bahrain,0
 2021-02-01,Bangladesh,6
@@ -7142,7 +7115,6 @@ Date,Country,Arrivals
 2021-02-01,Bulgaria,0
 2021-02-01,Burundi,1
 2021-02-01,Burkina Faso,0
-2021-02-01,C,0
 2021-02-01,Cambodia,0
 2021-02-01,Cameroon,0
 2021-02-01,Canada,71
@@ -7160,12 +7132,10 @@ Date,Country,Arrivals
 2021-02-01,Cuba,0
 2021-02-01,Cyprus,0
 2021-02-01,Czech Republic,17
-2021-02-01,D,0
 2021-02-01,Denmark,11
 2021-02-01,Djibouti,0
 2021-02-01,Dominica,0
 2021-02-01,Dominican Republic,0
-2021-02-01,E,0
 2021-02-01,Ecuador,0
 2021-02-01,Egypt,3
 2021-02-01,El Salvador,0
@@ -7173,12 +7143,9 @@ Date,Country,Arrivals
 2021-02-01,Eritrea,0
 2021-02-01,Estonia,3
 2021-02-01,Ethiopia,0
-2021-02-01,European Union,0
-2021-02-01,F,0
 2021-02-01,Fiji,0
 2021-02-01,Finland,2
 2021-02-01,France,40
-2021-02-01,G,0
 2021-02-01,Gambia,0
 2021-02-01,Gabon,0
 2021-02-01,Georgia,0
@@ -7189,12 +7156,10 @@ Date,Country,Arrivals
 2021-02-01,Guatemala,0
 2021-02-01,Guinea-Bissau,0
 2021-02-01,Guyana,0
-2021-02-01,H,0
 2021-02-01,Haiti,0
 2021-02-01,Honduras,0
 2021-02-01,Hong Kong,0
 2021-02-01,Hungary,6
-2021-02-01,I,0
 2021-02-01,Iceland,0
 2021-02-01,India,79
 2021-02-01,Indonesia,5
@@ -7204,17 +7169,14 @@ Date,Country,Arrivals
 2021-02-01,Isle Of Man,0
 2021-02-01,Israel,1
 2021-02-01,Italy,23
-2021-02-01,J,0
 2021-02-01,Jamaica,0
 2021-02-01,Japan,9
 2021-02-01,Jordan,4
-2021-02-01,K,0
 2021-02-01,Kazakhstan,1231
 2021-02-01,Kenya,0
 2021-02-01,Kosovo,1
 2021-02-01,Kuwait,0
 2021-02-01,Kyrgyzstan,1
-2021-02-01,L,0
 2021-02-01,Laos,0
 2021-02-01,Latvia,13
 2021-02-01,Lebanon,6
@@ -7224,7 +7186,6 @@ Date,Country,Arrivals
 2021-02-01,Liechtenstein,0
 2021-02-01,Lithuania,5
 2021-02-01,Luxembourg,2
-2021-02-01,M,0
 2021-02-01,Macedonia,0
 2021-02-01,Madagascar,0
 2021-02-01,Malawi,0
@@ -7243,7 +7204,6 @@ Date,Country,Arrivals
 2021-02-01,Morocco,1
 2021-02-01,Mozambique,0
 2021-02-01,Myanmar,4
-2021-02-01,N,0
 2021-02-01,Namibia,0
 2021-02-01,Nauru,0
 2021-02-01,Nepal,1
@@ -7252,9 +7212,7 @@ Date,Country,Arrivals
 2021-02-01,Nigeria,0
 2021-02-01,Niger,0
 2021-02-01,Norway,14
-2021-02-01,O,0
 2021-02-01,Oman,0
-2021-02-01,P,0
 2021-02-01,Pakistan,13
 2021-02-01,Palestinian Territories,0
 2021-02-01,Panama,1
@@ -7264,14 +7222,11 @@ Date,Country,Arrivals
 2021-02-01,Philippines,15
 2021-02-01,Poland,11
 2021-02-01,Portugal,4
-2021-02-01,Q,0
 2021-02-01,Qatar,1
-2021-02-01,R,0
 2021-02-01,Zimbabwe,0
 2021-02-01,Romania,2
 2021-02-01,Russian Federation,119
 2021-02-01,Rwanda,0
-2021-02-01,S,0
 2021-02-01,Saint Kitts And Nevis,2
 2021-02-01,Saint Lucia,0
 2021-02-01,Saint Vincent And The Grenadines,0
@@ -7296,7 +7251,6 @@ Date,Country,Arrivals
 2021-02-01,Sweden,9
 2021-02-01,Switzerland,33
 2021-02-01,Syrian Arab Republic,0
-2021-02-01,T,0
 2021-02-01,Taiwan,0
 2021-02-01,Tajikistan,0
 2021-02-01,Tanzania,0
@@ -7308,7 +7262,6 @@ Date,Country,Arrivals
 2021-02-01,Tunisia,0
 2021-02-01,Turkey,3
 2021-02-01,Turkmenistan,1
-2021-02-01,U,0
 2021-02-01,Uganda,0
 2021-02-01,Ukraine,845
 2021-02-01,United Arab Emirates,0
@@ -7316,16 +7269,12 @@ Date,Country,Arrivals
 2021-02-01,United States,75
 2021-02-01,Uruguay,0
 2021-02-01,Uzbekistan,5
-2021-02-01,V,0
 2021-02-01,Vanuatu,0
 2021-02-01,Venezuela,0
 2021-02-01,Vietnam,0
-2021-02-01,Y,0
 2021-02-01,Yemen,0
-2021-02-01,Z,0
 2021-02-01,Zambia,0
 2021-02-01,Zimbabwe,0
-2021-03-01,A,0
 2021-03-01,Afghanistan,1
 2021-03-01,Albania,0
 2021-03-01,Algeria,0
@@ -7337,7 +7286,6 @@ Date,Country,Arrivals
 2021-03-01,Australia,29
 2021-03-01,Austria,38
 2021-03-01,Azerbaijan,7
-2021-03-01,B,0
 2021-03-01,Bahamas,0
 2021-03-01,Bahrain,8
 2021-03-01,Bangladesh,3
@@ -7355,7 +7303,6 @@ Date,Country,Arrivals
 2021-03-01,Bulgaria,2
 2021-03-01,Burundi,0
 2021-03-01,Burkina Faso,0
-2021-03-01,C,0
 2021-03-01,Cambodia,1
 2021-03-01,Cameroon,0
 2021-03-01,Canada,120
@@ -7373,12 +7320,10 @@ Date,Country,Arrivals
 2021-03-01,Cuba,0
 2021-03-01,Cyprus,1
 2021-03-01,Czech Republic,52
-2021-03-01,D,0
 2021-03-01,Denmark,21
 2021-03-01,Djibouti,0
 2021-03-01,Dominica,0
 2021-03-01,Dominican Republic,0
-2021-03-01,E,0
 2021-03-01,Ecuador,0
 2021-03-01,Egypt,9
 2021-03-01,El Salvador,0
@@ -7386,12 +7331,9 @@ Date,Country,Arrivals
 2021-03-01,Eritrea,0
 2021-03-01,Estonia,8
 2021-03-01,Ethiopia,0
-2021-03-01,European Union,0
-2021-03-01,F,0
 2021-03-01,Fiji,0
 2021-03-01,Finland,7
 2021-03-01,France,72
-2021-03-01,G,0
 2021-03-01,Gambia,0
 2021-03-01,Gabon,0
 2021-03-01,Georgia,1
@@ -7402,12 +7344,10 @@ Date,Country,Arrivals
 2021-03-01,Guatemala,0
 2021-03-01,Guinea-Bissau,0
 2021-03-01,Guyana,0
-2021-03-01,H,0
 2021-03-01,Haiti,0
 2021-03-01,Honduras,0
 2021-03-01,Hong Kong,0
 2021-03-01,Hungary,6
-2021-03-01,I,0
 2021-03-01,Iceland,1
 2021-03-01,India,183
 2021-03-01,Indonesia,3
@@ -7417,17 +7357,14 @@ Date,Country,Arrivals
 2021-03-01,Isle Of Man,0
 2021-03-01,Israel,14
 2021-03-01,Italy,34
-2021-03-01,J,0
 2021-03-01,Jamaica,1
 2021-03-01,Japan,12
 2021-03-01,Jordan,34
-2021-03-01,K,0
 2021-03-01,Kazakhstan,1514
 2021-03-01,Kenya,1
 2021-03-01,Kosovo,0
 2021-03-01,Kuwait,3
 2021-03-01,Kyrgyzstan,2
-2021-03-01,L,0
 2021-03-01,Laos,0
 2021-03-01,Latvia,12
 2021-03-01,Lebanon,48
@@ -7437,7 +7374,6 @@ Date,Country,Arrivals
 2021-03-01,Liechtenstein,1
 2021-03-01,Lithuania,11
 2021-03-01,Luxembourg,2
-2021-03-01,M,0
 2021-03-01,Macedonia,0
 2021-03-01,Madagascar,1
 2021-03-01,Malawi,0
@@ -7456,7 +7392,6 @@ Date,Country,Arrivals
 2021-03-01,Morocco,0
 2021-03-01,Mozambique,0
 2021-03-01,Myanmar,1
-2021-03-01,N,0
 2021-03-01,Namibia,0
 2021-03-01,Nauru,0
 2021-03-01,Nepal,1
@@ -7465,9 +7400,7 @@ Date,Country,Arrivals
 2021-03-01,Nigeria,0
 2021-03-01,Niger,0
 2021-03-01,Norway,21
-2021-03-01,O,0
 2021-03-01,Oman,1
-2021-03-01,P,0
 2021-03-01,Pakistan,17
 2021-03-01,Palestinian Territories,1
 2021-03-01,Panama,0
@@ -7477,14 +7410,11 @@ Date,Country,Arrivals
 2021-03-01,Philippines,8
 2021-03-01,Poland,45
 2021-03-01,Portugal,4
-2021-03-01,Q,0
 2021-03-01,Qatar,0
-2021-03-01,R,0
 2021-03-01,Zimbabwe,0
 2021-03-01,Romania,4
 2021-03-01,Russian Federation,197
 2021-03-01,Rwanda,0
-2021-03-01,S,0
 2021-03-01,Saint Kitts And Nevis,0
 2021-03-01,Saint Lucia,0
 2021-03-01,Saint Vincent And The Grenadines,0
@@ -7509,7 +7439,6 @@ Date,Country,Arrivals
 2021-03-01,Sweden,22
 2021-03-01,Switzerland,84
 2021-03-01,Syrian Arab Republic,1
-2021-03-01,T,0
 2021-03-01,Taiwan,3
 2021-03-01,Tajikistan,0
 2021-03-01,Tanzania,0
@@ -7521,7 +7450,6 @@ Date,Country,Arrivals
 2021-03-01,Tunisia,0
 2021-03-01,Turkey,15
 2021-03-01,Turkmenistan,0
-2021-03-01,U,0
 2021-03-01,Uganda,0
 2021-03-01,Ukraine,287
 2021-03-01,United Arab Emirates,4
@@ -7529,16 +7457,12 @@ Date,Country,Arrivals
 2021-03-01,United States,182
 2021-03-01,Uruguay,1
 2021-03-01,Uzbekistan,10
-2021-03-01,V,0
 2021-03-01,Vanuatu,0
 2021-03-01,Venezuela,0
 2021-03-01,Vietnam,5
-2021-03-01,Y,0
 2021-03-01,Yemen,0
-2021-03-01,Z,0
 2021-03-01,Zambia,0
 2021-03-01,Zimbabwe,0
-2021-04-01,A,0
 2021-04-01,Afghanistan,1
 2021-04-01,Albania,0
 2021-04-01,Algeria,0
@@ -7550,7 +7474,6 @@ Date,Country,Arrivals
 2021-04-01,Australia,60
 2021-04-01,Austria,32
 2021-04-01,Azerbaijan,2
-2021-04-01,B,0
 2021-04-01,Bahamas,0
 2021-04-01,Bahrain,2
 2021-04-01,Bangladesh,5
@@ -7568,7 +7491,6 @@ Date,Country,Arrivals
 2021-04-01,Bulgaria,15
 2021-04-01,Burundi,0
 2021-04-01,Burkina Faso,0
-2021-04-01,C,0
 2021-04-01,Cambodia,0
 2021-04-01,Cameroon,0
 2021-04-01,Canada,144
@@ -7586,12 +7508,10 @@ Date,Country,Arrivals
 2021-04-01,Cuba,2
 2021-04-01,Cyprus,1
 2021-04-01,Czech Republic,52
-2021-04-01,D,0
 2021-04-01,Denmark,10
 2021-04-01,Djibouti,0
 2021-04-01,Dominica,1
 2021-04-01,Dominican Republic,0
-2021-04-01,E,0
 2021-04-01,Ecuador,0
 2021-04-01,Egypt,8
 2021-04-01,El Salvador,0
@@ -7599,12 +7519,9 @@ Date,Country,Arrivals
 2021-04-01,Eritrea,0
 2021-04-01,Estonia,22
 2021-04-01,Ethiopia,3
-2021-04-01,European Union,0
-2021-04-01,F,0
 2021-04-01,Fiji,0
 2021-04-01,Finland,10
 2021-04-01,France,84
-2021-04-01,G,0
 2021-04-01,Gambia,0
 2021-04-01,Gabon,0
 2021-04-01,Georgia,9
@@ -7615,12 +7532,10 @@ Date,Country,Arrivals
 2021-04-01,Guatemala,0
 2021-04-01,Guinea-Bissau,0
 2021-04-01,Guyana,0
-2021-04-01,H,0
 2021-04-01,Haiti,0
 2021-04-01,Honduras,1
 2021-04-01,Hong Kong,0
 2021-04-01,Hungary,7
-2021-04-01,I,0
 2021-04-01,Iceland,0
 2021-04-01,India,796
 2021-04-01,Indonesia,6
@@ -7630,17 +7545,14 @@ Date,Country,Arrivals
 2021-04-01,Isle Of Man,0
 2021-04-01,Israel,33
 2021-04-01,Italy,43
-2021-04-01,J,0
 2021-04-01,Jamaica,0
 2021-04-01,Japan,19
 2021-04-01,Jordan,14
-2021-04-01,K,0
 2021-04-01,Kazakhstan,440
 2021-04-01,Kenya,1
 2021-04-01,Kosovo,0
 2021-04-01,Kuwait,3
 2021-04-01,Kyrgyzstan,0
-2021-04-01,L,0
 2021-04-01,Laos,0
 2021-04-01,Latvia,6
 2021-04-01,Lebanon,45
@@ -7650,7 +7562,6 @@ Date,Country,Arrivals
 2021-04-01,Liechtenstein,1
 2021-04-01,Lithuania,2
 2021-04-01,Luxembourg,6
-2021-04-01,M,0
 2021-04-01,Macedonia,1
 2021-04-01,Madagascar,0
 2021-04-01,Malawi,0
@@ -7669,7 +7580,6 @@ Date,Country,Arrivals
 2021-04-01,Morocco,2
 2021-04-01,Mozambique,1
 2021-04-01,Myanmar,5
-2021-04-01,N,0
 2021-04-01,Namibia,4
 2021-04-01,Nauru,0
 2021-04-01,Nepal,3
@@ -7678,9 +7588,7 @@ Date,Country,Arrivals
 2021-04-01,Nigeria,2
 2021-04-01,Niger,0
 2021-04-01,Norway,17
-2021-04-01,O,0
 2021-04-01,Oman,0
-2021-04-01,P,0
 2021-04-01,Pakistan,18
 2021-04-01,Palestinian Territories,0
 2021-04-01,Panama,0
@@ -7690,14 +7598,11 @@ Date,Country,Arrivals
 2021-04-01,Philippines,28
 2021-04-01,Poland,26
 2021-04-01,Portugal,8
-2021-04-01,Q,0
 2021-04-01,Qatar,2
-2021-04-01,R,0
 2021-04-01,Zimbabwe,0
 2021-04-01,Romania,32
 2021-04-01,Russian Federation,173
 2021-04-01,Rwanda,0
-2021-04-01,S,0
 2021-04-01,Saint Kitts And Nevis,3
 2021-04-01,Saint Lucia,0
 2021-04-01,Saint Vincent And The Grenadines,0
@@ -7722,7 +7627,6 @@ Date,Country,Arrivals
 2021-04-01,Sweden,19
 2021-04-01,Switzerland,93
 2021-04-01,Syrian Arab Republic,1
-2021-04-01,T,0
 2021-04-01,Taiwan,5
 2021-04-01,Tajikistan,2
 2021-04-01,Tanzania,0
@@ -7734,7 +7638,6 @@ Date,Country,Arrivals
 2021-04-01,Tunisia,1
 2021-04-01,Turkey,11
 2021-04-01,Turkmenistan,0
-2021-04-01,U,0
 2021-04-01,Uganda,2
 2021-04-01,Ukraine,47
 2021-04-01,United Arab Emirates,7
@@ -7742,16 +7645,12 @@ Date,Country,Arrivals
 2021-04-01,United States,248
 2021-04-01,Uruguay,0
 2021-04-01,Uzbekistan,5
-2021-04-01,V,0
 2021-04-01,Vanuatu,0
 2021-04-01,Venezuela,0
 2021-04-01,Vietnam,2
-2021-04-01,Y,0
 2021-04-01,Yemen,2
-2021-04-01,Z,0
 2021-04-01,Zambia,0
 2021-04-01,Zimbabwe,0
-2021-05-01,A,0
 2021-05-01,Afghanistan,1
 2021-05-01,Albania,0
 2021-05-01,Algeria,0
@@ -7763,7 +7662,6 @@ Date,Country,Arrivals
 2021-05-01,Australia,34
 2021-05-01,Austria,9
 2021-05-01,Azerbaijan,0
-2021-05-01,B,0
 2021-05-01,Bahamas,0
 2021-05-01,Bahrain,13
 2021-05-01,Bangladesh,6
@@ -7781,7 +7679,6 @@ Date,Country,Arrivals
 2021-05-01,Bulgaria,4
 2021-05-01,Burundi,0
 2021-05-01,Burkina Faso,0
-2021-05-01,C,0
 2021-05-01,Cambodia,0
 2021-05-01,Cameroon,0
 2021-05-01,Canada,69
@@ -7799,12 +7696,10 @@ Date,Country,Arrivals
 2021-05-01,Cuba,0
 2021-05-01,Cyprus,3
 2021-05-01,Czech Republic,5
-2021-05-01,D,0
 2021-05-01,Denmark,5
 2021-05-01,Djibouti,0
 2021-05-01,Dominica,0
 2021-05-01,Dominican Republic,0
-2021-05-01,E,0
 2021-05-01,Ecuador,0
 2021-05-01,Egypt,3
 2021-05-01,El Salvador,0
@@ -7812,12 +7707,9 @@ Date,Country,Arrivals
 2021-05-01,Eritrea,0
 2021-05-01,Estonia,0
 2021-05-01,Ethiopia,0
-2021-05-01,European Union,0
-2021-05-01,F,0
 2021-05-01,Fiji,0
 2021-05-01,Finland,5
 2021-05-01,France,27
-2021-05-01,G,0
 2021-05-01,Gambia,0
 2021-05-01,Gabon,0
 2021-05-01,Georgia,0
@@ -7828,12 +7720,10 @@ Date,Country,Arrivals
 2021-05-01,Guatemala,0
 2021-05-01,Guinea-Bissau,0
 2021-05-01,Guyana,0
-2021-05-01,H,0
 2021-05-01,Haiti,0
 2021-05-01,Honduras,0
 2021-05-01,Hong Kong,0
 2021-05-01,Hungary,0
-2021-05-01,I,0
 2021-05-01,Iceland,0
 2021-05-01,India,39
 2021-05-01,Indonesia,1
@@ -7843,17 +7733,14 @@ Date,Country,Arrivals
 2021-05-01,Isle Of Man,0
 2021-05-01,Israel,8
 2021-05-01,Italy,29
-2021-05-01,J,0
 2021-05-01,Jamaica,0
 2021-05-01,Japan,8
 2021-05-01,Jordan,12
-2021-05-01,K,0
 2021-05-01,Kazakhstan,2
 2021-05-01,Kenya,0
 2021-05-01,Kosovo,0
 2021-05-01,Kuwait,0
 2021-05-01,Kyrgyzstan,7
-2021-05-01,L,0
 2021-05-01,Laos,0
 2021-05-01,Latvia,3
 2021-05-01,Lebanon,16
@@ -7863,7 +7750,6 @@ Date,Country,Arrivals
 2021-05-01,Liechtenstein,0
 2021-05-01,Lithuania,1
 2021-05-01,Luxembourg,0
-2021-05-01,M,0
 2021-05-01,Macedonia,0
 2021-05-01,Madagascar,0
 2021-05-01,Malawi,0
@@ -7882,7 +7768,6 @@ Date,Country,Arrivals
 2021-05-01,Morocco,0
 2021-05-01,Mozambique,0
 2021-05-01,Myanmar,2
-2021-05-01,N,0
 2021-05-01,Namibia,0
 2021-05-01,Nauru,0
 2021-05-01,Nepal,2
@@ -7891,9 +7776,7 @@ Date,Country,Arrivals
 2021-05-01,Nigeria,0
 2021-05-01,Niger,0
 2021-05-01,Norway,2
-2021-05-01,O,0
 2021-05-01,Oman,0
-2021-05-01,P,0
 2021-05-01,Pakistan,9
 2021-05-01,Palestinian Territories,2
 2021-05-01,Panama,0
@@ -7903,14 +7786,11 @@ Date,Country,Arrivals
 2021-05-01,Philippines,26
 2021-05-01,Poland,9
 2021-05-01,Portugal,1
-2021-05-01,Q,0
 2021-05-01,Qatar,0
-2021-05-01,R,0
 2021-05-01,Zimbabwe,0
 2021-05-01,Romania,2
 2021-05-01,Russian Federation,94
 2021-05-01,Rwanda,0
-2021-05-01,S,0
 2021-05-01,Saint Kitts And Nevis,0
 2021-05-01,Saint Lucia,0
 2021-05-01,Saint Vincent And The Grenadines,0
@@ -7935,7 +7815,6 @@ Date,Country,Arrivals
 2021-05-01,Sweden,7
 2021-05-01,Switzerland,45
 2021-05-01,Syrian Arab Republic,0
-2021-05-01,T,0
 2021-05-01,Taiwan,0
 2021-05-01,Tajikistan,0
 2021-05-01,Tanzania,0
@@ -7947,7 +7826,6 @@ Date,Country,Arrivals
 2021-05-01,Tunisia,0
 2021-05-01,Turkey,9
 2021-05-01,Turkmenistan,0
-2021-05-01,U,0
 2021-05-01,Uganda,0
 2021-05-01,Ukraine,18
 2021-05-01,United Arab Emirates,6
@@ -7955,16 +7833,12 @@ Date,Country,Arrivals
 2021-05-01,United States,153
 2021-05-01,Uruguay,0
 2021-05-01,Uzbekistan,5
-2021-05-01,V,0
 2021-05-01,Vanuatu,0
 2021-05-01,Venezuela,0
 2021-05-01,Vietnam,5
-2021-05-01,Y,0
 2021-05-01,Yemen,2
-2021-05-01,Z,0
 2021-05-01,Zambia,0
 2021-05-01,Zimbabwe,0
-2021-06-01,A,0
 2021-06-01,Afghanistan,1
 2021-06-01,Albania,0
 2021-06-01,Algeria,0
@@ -7976,7 +7850,6 @@ Date,Country,Arrivals
 2021-06-01,Australia,13
 2021-06-01,Austria,8
 2021-06-01,Azerbaijan,0
-2021-06-01,B,0
 2021-06-01,Bahamas,0
 2021-06-01,Bahrain,0
 2021-06-01,Bangladesh,2
@@ -7994,7 +7867,6 @@ Date,Country,Arrivals
 2021-06-01,Bulgaria,0
 2021-06-01,Burundi,0
 2021-06-01,Burkina Faso,0
-2021-06-01,C,0
 2021-06-01,Cambodia,0
 2021-06-01,Cameroon,0
 2021-06-01,Canada,67
@@ -8012,12 +7884,10 @@ Date,Country,Arrivals
 2021-06-01,Cuba,0
 2021-06-01,Cyprus,1
 2021-06-01,Czech Republic,4
-2021-06-01,D,0
 2021-06-01,Denmark,1
 2021-06-01,Djibouti,0
 2021-06-01,Dominica,0
 2021-06-01,Dominican Republic,0
-2021-06-01,E,0
 2021-06-01,Ecuador,0
 2021-06-01,Egypt,0
 2021-06-01,El Salvador,0
@@ -8025,12 +7895,9 @@ Date,Country,Arrivals
 2021-06-01,Eritrea,0
 2021-06-01,Estonia,1
 2021-06-01,Ethiopia,0
-2021-06-01,European Union,0
-2021-06-01,F,0
 2021-06-01,Fiji,3
 2021-06-01,Finland,0
 2021-06-01,France,654
-2021-06-01,G,0
 2021-06-01,Gambia,0
 2021-06-01,Gabon,0
 2021-06-01,Georgia,0
@@ -8041,12 +7908,10 @@ Date,Country,Arrivals
 2021-06-01,Guatemala,0
 2021-06-01,Guinea-Bissau,0
 2021-06-01,Guyana,0
-2021-06-01,H,0
 2021-06-01,Haiti,0
 2021-06-01,Honduras,0
 2021-06-01,Hong Kong,0
 2021-06-01,Hungary,0
-2021-06-01,I,0
 2021-06-01,Iceland,0
 2021-06-01,India,5
 2021-06-01,Indonesia,9
@@ -8056,17 +7921,14 @@ Date,Country,Arrivals
 2021-06-01,Isle Of Man,0
 2021-06-01,Israel,3
 2021-06-01,Italy,16
-2021-06-01,J,0
 2021-06-01,Jamaica,0
 2021-06-01,Japan,11
 2021-06-01,Jordan,17
-2021-06-01,K,0
 2021-06-01,Kazakhstan,0
 2021-06-01,Kenya,0
 2021-06-01,Kosovo,0
 2021-06-01,Kuwait,0
 2021-06-01,Kyrgyzstan,0
-2021-06-01,L,0
 2021-06-01,Laos,0
 2021-06-01,Latvia,2
 2021-06-01,Lebanon,0
@@ -8076,7 +7938,6 @@ Date,Country,Arrivals
 2021-06-01,Liechtenstein,0
 2021-06-01,Lithuania,4
 2021-06-01,Luxembourg,0
-2021-06-01,M,0
 2021-06-01,Macedonia,0
 2021-06-01,Madagascar,0
 2021-06-01,Malawi,0
@@ -8095,7 +7956,6 @@ Date,Country,Arrivals
 2021-06-01,Morocco,1
 2021-06-01,Mozambique,0
 2021-06-01,Myanmar,2
-2021-06-01,N,0
 2021-06-01,Namibia,0
 2021-06-01,Nauru,0
 2021-06-01,Nepal,3
@@ -8104,9 +7964,7 @@ Date,Country,Arrivals
 2021-06-01,Nigeria,0
 2021-06-01,Niger,0
 2021-06-01,Norway,32
-2021-06-01,O,0
 2021-06-01,Oman,0
-2021-06-01,P,0
 2021-06-01,Pakistan,13
 2021-06-01,Palestinian Territories,0
 2021-06-01,Panama,0
@@ -8116,14 +7974,11 @@ Date,Country,Arrivals
 2021-06-01,Philippines,6
 2021-06-01,Poland,2
 2021-06-01,Portugal,3
-2021-06-01,Q,0
 2021-06-01,Qatar,0
-2021-06-01,R,0
 2021-06-01,Zimbabwe,0
 2021-06-01,Romania,6
 2021-06-01,Russian Federation,33
 2021-06-01,Rwanda,0
-2021-06-01,S,0
 2021-06-01,Saint Kitts And Nevis,0
 2021-06-01,Saint Lucia,0
 2021-06-01,Saint Vincent And The Grenadines,0
@@ -8148,7 +8003,6 @@ Date,Country,Arrivals
 2021-06-01,Sweden,14
 2021-06-01,Switzerland,27
 2021-06-01,Syrian Arab Republic,0
-2021-06-01,T,0
 2021-06-01,Taiwan,0
 2021-06-01,Tajikistan,0
 2021-06-01,Tanzania,0
@@ -8160,7 +8014,6 @@ Date,Country,Arrivals
 2021-06-01,Tunisia,0
 2021-06-01,Turkey,3
 2021-06-01,Turkmenistan,0
-2021-06-01,U,0
 2021-06-01,Uganda,0
 2021-06-01,Ukraine,9
 2021-06-01,United Arab Emirates,0
@@ -8168,16 +8021,12 @@ Date,Country,Arrivals
 2021-06-01,United States,118
 2021-06-01,Uruguay,0
 2021-06-01,Uzbekistan,1
-2021-06-01,V,0
 2021-06-01,Vanuatu,0
 2021-06-01,Venezuela,0
 2021-06-01,Vietnam,0
-2021-06-01,Y,0
 2021-06-01,Yemen,0
-2021-06-01,Z,0
 2021-06-01,Zambia,1
 2021-06-01,Zimbabwe,0
-2021-07-01,A,0
 2021-07-01,Afghanistan,0
 2021-07-01,Albania,0
 2021-07-01,Algeria,0
@@ -8189,7 +8038,6 @@ Date,Country,Arrivals
 2021-07-01,Australia,15
 2021-07-01,Austria,47
 2021-07-01,Azerbaijan,7
-2021-07-01,B,0
 2021-07-01,Bahamas,0
 2021-07-01,Bahrain,3
 2021-07-01,Bangladesh,31
@@ -8207,7 +8055,6 @@ Date,Country,Arrivals
 2021-07-01,Bulgaria,0
 2021-07-01,Burundi,0
 2021-07-01,Burkina Faso,0
-2021-07-01,C,0
 2021-07-01,Cambodia,0
 2021-07-01,Cameroon,0
 2021-07-01,Canada,178
@@ -8225,12 +8072,10 @@ Date,Country,Arrivals
 2021-07-01,Cuba,0
 2021-07-01,Cyprus,0
 2021-07-01,Czech Republic,17
-2021-07-01,D,0
 2021-07-01,Denmark,34
 2021-07-01,Djibouti,0
 2021-07-01,Dominica,1
 2021-07-01,Dominican Republic,0
-2021-07-01,E,0
 2021-07-01,Ecuador,0
 2021-07-01,Egypt,3
 2021-07-01,El Salvador,0
@@ -8238,12 +8083,9 @@ Date,Country,Arrivals
 2021-07-01,Eritrea,0
 2021-07-01,Estonia,0
 2021-07-01,Ethiopia,0
-2021-07-01,European Union,0
-2021-07-01,F,0
 2021-07-01,Fiji,0
 2021-07-01,Finland,1
 2021-07-01,France,147
-2021-07-01,G,0
 2021-07-01,Gambia,0
 2021-07-01,Gabon,0
 2021-07-01,Georgia,0
@@ -8254,12 +8096,10 @@ Date,Country,Arrivals
 2021-07-01,Guatemala,0
 2021-07-01,Guinea-Bissau,1
 2021-07-01,Guyana,0
-2021-07-01,H,0
 2021-07-01,Haiti,0
 2021-07-01,Honduras,0
 2021-07-01,Hong Kong,0
 2021-07-01,Hungary,2
-2021-07-01,I,0
 2021-07-01,Iceland,0
 2021-07-01,India,8
 2021-07-01,Indonesia,21
@@ -8269,17 +8109,14 @@ Date,Country,Arrivals
 2021-07-01,Isle Of Man,0
 2021-07-01,Israel,22
 2021-07-01,Italy,32
-2021-07-01,J,0
 2021-07-01,Jamaica,0
 2021-07-01,Japan,7
 2021-07-01,Jordan,10
-2021-07-01,K,0
 2021-07-01,Kazakhstan,2
 2021-07-01,Kenya,0
 2021-07-01,Kosovo,1
 2021-07-01,Kuwait,1
 2021-07-01,Kyrgyzstan,0
-2021-07-01,L,0
 2021-07-01,Laos,0
 2021-07-01,Latvia,0
 2021-07-01,Lebanon,7
@@ -8289,7 +8126,6 @@ Date,Country,Arrivals
 2021-07-01,Liechtenstein,0
 2021-07-01,Lithuania,2
 2021-07-01,Luxembourg,5
-2021-07-01,M,0
 2021-07-01,Macedonia,0
 2021-07-01,Madagascar,0
 2021-07-01,Malawi,0
@@ -8308,7 +8144,6 @@ Date,Country,Arrivals
 2021-07-01,Morocco,1
 2021-07-01,Mozambique,0
 2021-07-01,Myanmar,0
-2021-07-01,N,0
 2021-07-01,Namibia,0
 2021-07-01,Nauru,0
 2021-07-01,Nepal,1
@@ -8317,9 +8152,7 @@ Date,Country,Arrivals
 2021-07-01,Nigeria,0
 2021-07-01,Niger,0
 2021-07-01,Norway,39
-2021-07-01,O,0
 2021-07-01,Oman,1
-2021-07-01,P,0
 2021-07-01,Pakistan,111
 2021-07-01,Palestinian Territories,0
 2021-07-01,Panama,0
@@ -8329,14 +8162,11 @@ Date,Country,Arrivals
 2021-07-01,Philippines,18
 2021-07-01,Poland,8
 2021-07-01,Portugal,1
-2021-07-01,Q,0
 2021-07-01,Qatar,0
-2021-07-01,R,0
 2021-07-01,Zimbabwe,0
 2021-07-01,Romania,0
 2021-07-01,Russian Federation,66
 2021-07-01,Rwanda,0
-2021-07-01,S,0
 2021-07-01,Saint Kitts And Nevis,0
 2021-07-01,Saint Lucia,0
 2021-07-01,Saint Vincent And The Grenadines,0
@@ -8361,7 +8191,6 @@ Date,Country,Arrivals
 2021-07-01,Sweden,29
 2021-07-01,Switzerland,123
 2021-07-01,Syrian Arab Republic,0
-2021-07-01,T,0
 2021-07-01,Taiwan,2
 2021-07-01,Tajikistan,1
 2021-07-01,Tanzania,0
@@ -8373,7 +8202,6 @@ Date,Country,Arrivals
 2021-07-01,Tunisia,5
 2021-07-01,Turkey,6
 2021-07-01,Turkmenistan,0
-2021-07-01,U,0
 2021-07-01,Uganda,0
 2021-07-01,Ukraine,13
 2021-07-01,United Arab Emirates,3
@@ -8381,16 +8209,12 @@ Date,Country,Arrivals
 2021-07-01,United States,242
 2021-07-01,Uruguay,0
 2021-07-01,Uzbekistan,6
-2021-07-01,V,0
 2021-07-01,Vanuatu,2
 2021-07-01,Venezuela,0
 2021-07-01,Vietnam,1
-2021-07-01,Y,0
 2021-07-01,Yemen,0
-2021-07-01,Z,0
 2021-07-01,Zambia,0
 2021-07-01,Zimbabwe,0
-2021-08-01,A,0
 2021-08-01,Afghanistan,1
 2021-08-01,Albania,0
 2021-08-01,Algeria,0
@@ -8402,7 +8226,6 @@ Date,Country,Arrivals
 2021-08-01,Australia,26
 2021-08-01,Austria,55
 2021-08-01,Azerbaijan,0
-2021-08-01,B,0
 2021-08-01,Bahamas,0
 2021-08-01,Bahrain,5
 2021-08-01,Bangladesh,19
@@ -8420,7 +8243,6 @@ Date,Country,Arrivals
 2021-08-01,Bulgaria,4
 2021-08-01,Burundi,0
 2021-08-01,Burkina Faso,0
-2021-08-01,C,0
 2021-08-01,Cambodia,0
 2021-08-01,Cameroon,0
 2021-08-01,Canada,594
@@ -8438,12 +8260,10 @@ Date,Country,Arrivals
 2021-08-01,Cuba,0
 2021-08-01,Cyprus,9
 2021-08-01,Czech Republic,30
-2021-08-01,D,0
 2021-08-01,Denmark,27
 2021-08-01,Djibouti,0
 2021-08-01,Dominica,0
 2021-08-01,Dominican Republic,0
-2021-08-01,E,0
 2021-08-01,Ecuador,0
 2021-08-01,Egypt,5
 2021-08-01,El Salvador,0
@@ -8451,12 +8271,9 @@ Date,Country,Arrivals
 2021-08-01,Eritrea,1
 2021-08-01,Estonia,1
 2021-08-01,Ethiopia,0
-2021-08-01,European Union,0
-2021-08-01,F,0
 2021-08-01,Fiji,0
 2021-08-01,Finland,4
 2021-08-01,France,248
-2021-08-01,G,0
 2021-08-01,Gambia,0
 2021-08-01,Gabon,0
 2021-08-01,Georgia,4
@@ -8467,12 +8284,10 @@ Date,Country,Arrivals
 2021-08-01,Guatemala,0
 2021-08-01,Guinea-Bissau,0
 2021-08-01,Guyana,0
-2021-08-01,H,0
 2021-08-01,Haiti,0
 2021-08-01,Honduras,0
 2021-08-01,Hong Kong,0
 2021-08-01,Hungary,3
-2021-08-01,I,0
 2021-08-01,Iceland,1
 2021-08-01,India,405
 2021-08-01,Indonesia,96
@@ -8482,17 +8297,14 @@ Date,Country,Arrivals
 2021-08-01,Isle Of Man,0
 2021-08-01,Israel,78
 2021-08-01,Italy,54
-2021-08-01,J,0
 2021-08-01,Jamaica,0
 2021-08-01,Japan,9
 2021-08-01,Jordan,16
-2021-08-01,K,0
 2021-08-01,Kazakhstan,7
 2021-08-01,Kenya,1
 2021-08-01,Kosovo,0
 2021-08-01,Kuwait,3
 2021-08-01,Kyrgyzstan,0
-2021-08-01,L,0
 2021-08-01,Laos,0
 2021-08-01,Latvia,2
 2021-08-01,Lebanon,6
@@ -8502,7 +8314,6 @@ Date,Country,Arrivals
 2021-08-01,Liechtenstein,0
 2021-08-01,Lithuania,2
 2021-08-01,Luxembourg,2
-2021-08-01,M,0
 2021-08-01,Macedonia,0
 2021-08-01,Madagascar,0
 2021-08-01,Malawi,0
@@ -8521,7 +8332,6 @@ Date,Country,Arrivals
 2021-08-01,Morocco,1
 2021-08-01,Mozambique,0
 2021-08-01,Myanmar,3
-2021-08-01,N,0
 2021-08-01,Namibia,0
 2021-08-01,Nauru,0
 2021-08-01,Nepal,4
@@ -8530,9 +8340,7 @@ Date,Country,Arrivals
 2021-08-01,Nigeria,0
 2021-08-01,Niger,0
 2021-08-01,Norway,64
-2021-08-01,O,0
 2021-08-01,Oman,11
-2021-08-01,P,0
 2021-08-01,Pakistan,456
 2021-08-01,Palestinian Territories,1
 2021-08-01,Panama,0
@@ -8542,14 +8350,11 @@ Date,Country,Arrivals
 2021-08-01,Philippines,21
 2021-08-01,Poland,34
 2021-08-01,Portugal,6
-2021-08-01,Q,0
 2021-08-01,Qatar,0
-2021-08-01,R,0
 2021-08-01,Zimbabwe,0
 2021-08-01,Romania,20
 2021-08-01,Russian Federation,247
 2021-08-01,Rwanda,0
-2021-08-01,S,0
 2021-08-01,Saint Kitts And Nevis,1
 2021-08-01,Saint Lucia,0
 2021-08-01,Saint Vincent And The Grenadines,0
@@ -8574,7 +8379,6 @@ Date,Country,Arrivals
 2021-08-01,Sweden,40
 2021-08-01,Switzerland,152
 2021-08-01,Syrian Arab Republic,0
-2021-08-01,T,0
 2021-08-01,Taiwan,2
 2021-08-01,Tajikistan,0
 2021-08-01,Tanzania,0
@@ -8586,7 +8390,6 @@ Date,Country,Arrivals
 2021-08-01,Tunisia,0
 2021-08-01,Turkey,8
 2021-08-01,Turkmenistan,0
-2021-08-01,U,0
 2021-08-01,Uganda,0
 2021-08-01,Ukraine,20
 2021-08-01,United Arab Emirates,0
@@ -8594,16 +8397,12 @@ Date,Country,Arrivals
 2021-08-01,United States,311
 2021-08-01,Uruguay,0
 2021-08-01,Uzbekistan,0
-2021-08-01,V,0
 2021-08-01,Vanuatu,0
 2021-08-01,Venezuela,0
 2021-08-01,Vietnam,1
-2021-08-01,Y,0
 2021-08-01,Yemen,1
-2021-08-01,Z,0
 2021-08-01,Zambia,0
 2021-08-01,Zimbabwe,0
-2021-09-01,A,0
 2021-09-01,Afghanistan,4
 2021-09-01,Albania,0
 2021-09-01,Algeria,1
@@ -8615,7 +8414,6 @@ Date,Country,Arrivals
 2021-09-01,Australia,27
 2021-09-01,Austria,44
 2021-09-01,Azerbaijan,1
-2021-09-01,B,0
 2021-09-01,Bahamas,0
 2021-09-01,Bahrain,0
 2021-09-01,Bangladesh,235
@@ -8633,7 +8431,6 @@ Date,Country,Arrivals
 2021-09-01,Bulgaria,1
 2021-09-01,Burundi,0
 2021-09-01,Burkina Faso,0
-2021-09-01,C,0
 2021-09-01,Cambodia,0
 2021-09-01,Cameroon,0
 2021-09-01,Canada,265
@@ -8651,12 +8448,10 @@ Date,Country,Arrivals
 2021-09-01,Cuba,0
 2021-09-01,Cyprus,4
 2021-09-01,Czech Republic,39
-2021-09-01,D,0
 2021-09-01,Denmark,62
 2021-09-01,Djibouti,0
 2021-09-01,Dominica,0
 2021-09-01,Dominican Republic,1
-2021-09-01,E,0
 2021-09-01,Ecuador,0
 2021-09-01,Egypt,8
 2021-09-01,El Salvador,0
@@ -8664,12 +8459,9 @@ Date,Country,Arrivals
 2021-09-01,Eritrea,0
 2021-09-01,Estonia,0
 2021-09-01,Ethiopia,0
-2021-09-01,European Union,0
-2021-09-01,F,0
 2021-09-01,Fiji,0
 2021-09-01,Finland,20
 2021-09-01,France,181
-2021-09-01,G,0
 2021-09-01,Gambia,0
 2021-09-01,Gabon,0
 2021-09-01,Georgia,2
@@ -8680,12 +8472,10 @@ Date,Country,Arrivals
 2021-09-01,Guatemala,3
 2021-09-01,Guinea-Bissau,0
 2021-09-01,Guyana,0
-2021-09-01,H,0
 2021-09-01,Haiti,0
 2021-09-01,Honduras,0
 2021-09-01,Hong Kong,0
 2021-09-01,Hungary,12
-2021-09-01,I,0
 2021-09-01,Iceland,0
 2021-09-01,India,8528
 2021-09-01,Indonesia,245
@@ -8695,17 +8485,14 @@ Date,Country,Arrivals
 2021-09-01,Isle Of Man,0
 2021-09-01,Israel,147
 2021-09-01,Italy,47
-2021-09-01,J,0
 2021-09-01,Jamaica,0
 2021-09-01,Japan,9
 2021-09-01,Jordan,8
-2021-09-01,K,0
 2021-09-01,Kazakhstan,3
 2021-09-01,Kenya,1
 2021-09-01,Kosovo,0
 2021-09-01,Kuwait,4
 2021-09-01,Kyrgyzstan,0
-2021-09-01,L,0
 2021-09-01,Laos,0
 2021-09-01,Latvia,4
 2021-09-01,Lebanon,4
@@ -8715,7 +8502,6 @@ Date,Country,Arrivals
 2021-09-01,Liechtenstein,0
 2021-09-01,Lithuania,11
 2021-09-01,Luxembourg,0
-2021-09-01,M,0
 2021-09-01,Macedonia,1
 2021-09-01,Madagascar,0
 2021-09-01,Malawi,0
@@ -8734,7 +8520,6 @@ Date,Country,Arrivals
 2021-09-01,Morocco,1
 2021-09-01,Mozambique,0
 2021-09-01,Myanmar,2
-2021-09-01,N,0
 2021-09-01,Namibia,0
 2021-09-01,Nauru,0
 2021-09-01,Nepal,7
@@ -8743,9 +8528,7 @@ Date,Country,Arrivals
 2021-09-01,Nigeria,1
 2021-09-01,Niger,0
 2021-09-01,Norway,56
-2021-09-01,O,0
 2021-09-01,Oman,5
-2021-09-01,P,0
 2021-09-01,Pakistan,1225
 2021-09-01,Palestinian Territories,3
 2021-09-01,Panama,0
@@ -8755,14 +8538,11 @@ Date,Country,Arrivals
 2021-09-01,Philippines,31
 2021-09-01,Poland,20
 2021-09-01,Portugal,17
-2021-09-01,Q,0
 2021-09-01,Qatar,0
-2021-09-01,R,0
 2021-09-01,Zimbabwe,0
 2021-09-01,Romania,7
 2021-09-01,Russian Federation,304
 2021-09-01,Rwanda,0
-2021-09-01,S,0
 2021-09-01,Saint Kitts And Nevis,1
 2021-09-01,Saint Lucia,0
 2021-09-01,Saint Vincent And The Grenadines,0
@@ -8787,7 +8567,6 @@ Date,Country,Arrivals
 2021-09-01,Sweden,29
 2021-09-01,Switzerland,88
 2021-09-01,Syrian Arab Republic,0
-2021-09-01,T,0
 2021-09-01,Taiwan,3
 2021-09-01,Tajikistan,1
 2021-09-01,Tanzania,0
@@ -8799,7 +8578,6 @@ Date,Country,Arrivals
 2021-09-01,Tunisia,2
 2021-09-01,Turkey,16
 2021-09-01,Turkmenistan,0
-2021-09-01,U,0
 2021-09-01,Uganda,1
 2021-09-01,Ukraine,43
 2021-09-01,United Arab Emirates,0
@@ -8807,16 +8585,12 @@ Date,Country,Arrivals
 2021-09-01,United States,150
 2021-09-01,Uruguay,0
 2021-09-01,Uzbekistan,0
-2021-09-01,V,0
 2021-09-01,Vanuatu,0
 2021-09-01,Venezuela,1
 2021-09-01,Vietnam,2
-2021-09-01,Y,0
 2021-09-01,Yemen,0
-2021-09-01,Z,0
 2021-09-01,Zambia,0
 2021-09-01,Zimbabwe,1
-2021-10-01,A,0
 2021-10-01,Afghanistan,0
 2021-10-01,Albania,0
 2021-10-01,Algeria,0
@@ -8828,7 +8602,6 @@ Date,Country,Arrivals
 2021-10-01,Australia,121
 2021-10-01,Austria,151
 2021-10-01,Azerbaijan,0
-2021-10-01,B,0
 2021-10-01,Bahamas,1
 2021-10-01,Bahrain,6
 2021-10-01,Bangladesh,273
@@ -8846,7 +8619,6 @@ Date,Country,Arrivals
 2021-10-01,Bulgaria,5
 2021-10-01,Burundi,0
 2021-10-01,Burkina Faso,2
-2021-10-01,C,0
 2021-10-01,Cambodia,2
 2021-10-01,Cameroon,1
 2021-10-01,Canada,688
@@ -8864,12 +8636,10 @@ Date,Country,Arrivals
 2021-10-01,Cuba,0
 2021-10-01,Cyprus,3
 2021-10-01,Czech Republic,132
-2021-10-01,D,0
 2021-10-01,Denmark,159
 2021-10-01,Djibouti,0
 2021-10-01,Dominica,0
 2021-10-01,Dominican Republic,0
-2021-10-01,E,0
 2021-10-01,Ecuador,1
 2021-10-01,Egypt,13
 2021-10-01,El Salvador,0
@@ -8877,12 +8647,9 @@ Date,Country,Arrivals
 2021-10-01,Eritrea,0
 2021-10-01,Estonia,31
 2021-10-01,Ethiopia,6
-2021-10-01,European Union,1
-2021-10-01,F,0
 2021-10-01,Fiji,0
 2021-10-01,Finland,32
 2021-10-01,France,624
-2021-10-01,G,0
 2021-10-01,Gambia,0
 2021-10-01,Gabon,0
 2021-10-01,Georgia,14
@@ -8893,12 +8660,10 @@ Date,Country,Arrivals
 2021-10-01,Guatemala,0
 2021-10-01,Guinea-Bissau,0
 2021-10-01,Guyana,0
-2021-10-01,H,0
 2021-10-01,Haiti,0
 2021-10-01,Honduras,0
 2021-10-01,Hong Kong,0
 2021-10-01,Hungary,24
-2021-10-01,I,0
 2021-10-01,Iceland,6
 2021-10-01,India,8406
 2021-10-01,Indonesia,473
@@ -8908,17 +8673,14 @@ Date,Country,Arrivals
 2021-10-01,Isle Of Man,0
 2021-10-01,Israel,110
 2021-10-01,Italy,160
-2021-10-01,J,0
 2021-10-01,Jamaica,0
 2021-10-01,Japan,45
 2021-10-01,Jordan,61
-2021-10-01,K,0
 2021-10-01,Kazakhstan,7
 2021-10-01,Kenya,7
 2021-10-01,Kosovo,0
 2021-10-01,Kuwait,20
 2021-10-01,Kyrgyzstan,6
-2021-10-01,L,0
 2021-10-01,Laos,0
 2021-10-01,Latvia,15
 2021-10-01,Lebanon,37
@@ -8928,7 +8690,6 @@ Date,Country,Arrivals
 2021-10-01,Liechtenstein,2
 2021-10-01,Lithuania,60
 2021-10-01,Luxembourg,1
-2021-10-01,M,0
 2021-10-01,Macedonia,1
 2021-10-01,Madagascar,0
 2021-10-01,Malawi,2
@@ -8947,7 +8708,6 @@ Date,Country,Arrivals
 2021-10-01,Morocco,7
 2021-10-01,Mozambique,0
 2021-10-01,Myanmar,1
-2021-10-01,N,0
 2021-10-01,Namibia,1
 2021-10-01,Nauru,0
 2021-10-01,Nepal,29
@@ -8956,9 +8716,7 @@ Date,Country,Arrivals
 2021-10-01,Nigeria,0
 2021-10-01,Niger,0
 2021-10-01,Norway,212
-2021-10-01,O,0
 2021-10-01,Oman,27
-2021-10-01,P,0
 2021-10-01,Pakistan,2042
 2021-10-01,Palestinian Territories,3
 2021-10-01,Panama,0
@@ -8968,14 +8726,11 @@ Date,Country,Arrivals
 2021-10-01,Philippines,76
 2021-10-01,Poland,116
 2021-10-01,Portugal,53
-2021-10-01,Q,0
 2021-10-01,Qatar,7
-2021-10-01,R,0
 2021-10-01,Zimbabwe,0
 2021-10-01,Romania,21
 2021-10-01,Russian Federation,1328
 2021-10-01,Rwanda,0
-2021-10-01,S,0
 2021-10-01,Saint Kitts And Nevis,0
 2021-10-01,Saint Lucia,0
 2021-10-01,Saint Vincent And The Grenadines,0
@@ -9000,7 +8755,6 @@ Date,Country,Arrivals
 2021-10-01,Sweden,98
 2021-10-01,Switzerland,403
 2021-10-01,Syrian Arab Republic,1
-2021-10-01,T,0
 2021-10-01,Taiwan,6
 2021-10-01,Tajikistan,7
 2021-10-01,Tanzania,1
@@ -9012,7 +8766,6 @@ Date,Country,Arrivals
 2021-10-01,Tunisia,5
 2021-10-01,Turkey,31
 2021-10-01,Turkmenistan,0
-2021-10-01,U,0
 2021-10-01,Uganda,2
 2021-10-01,Ukraine,168
 2021-10-01,United Arab Emirates,5
@@ -9020,16 +8773,12 @@ Date,Country,Arrivals
 2021-10-01,United States,573
 2021-10-01,Uruguay,0
 2021-10-01,Uzbekistan,6
-2021-10-01,V,0
 2021-10-01,Vanuatu,1
 2021-10-01,Venezuela,1
 2021-10-01,Vietnam,4
-2021-10-01,Y,0
 2021-10-01,Yemen,4
-2021-10-01,Z,0
 2021-10-01,Zambia,0
 2021-10-01,Zimbabwe,0
-2021-11-01,A,0
 2021-11-01,Afghanistan,1
 2021-11-01,Albania,0
 2021-11-01,Algeria,8
@@ -9041,7 +8790,6 @@ Date,Country,Arrivals
 2021-11-01,Australia,940
 2021-11-01,Austria,267
 2021-11-01,Azerbaijan,16
-2021-11-01,B,0
 2021-11-01,Bahamas,2
 2021-11-01,Bahrain,10
 2021-11-01,Bangladesh,372
@@ -9059,7 +8807,6 @@ Date,Country,Arrivals
 2021-11-01,Bulgaria,58
 2021-11-01,Burundi,1
 2021-11-01,Burkina Faso,0
-2021-11-01,C,0
 2021-11-01,Cambodia,4
 2021-11-01,Cameroon,1
 2021-11-01,Canada,1161
@@ -9077,12 +8824,10 @@ Date,Country,Arrivals
 2021-11-01,Cuba,0
 2021-11-01,Cyprus,12
 2021-11-01,Czech Republic,429
-2021-11-01,D,0
 2021-11-01,Denmark,316
 2021-11-01,Djibouti,0
 2021-11-01,Dominica,4
 2021-11-01,Dominican Republic,1
-2021-11-01,E,0
 2021-11-01,Ecuador,1
 2021-11-01,Egypt,80
 2021-11-01,El Salvador,1
@@ -9090,12 +8835,9 @@ Date,Country,Arrivals
 2021-11-01,Eritrea,2
 2021-11-01,Estonia,50
 2021-11-01,Ethiopia,5
-2021-11-01,European Union,0
-2021-11-01,F,0
 2021-11-01,Fiji,5
 2021-11-01,Finland,65
 2021-11-01,France,1447
-2021-11-01,G,0
 2021-11-01,Gambia,0
 2021-11-01,Gabon,0
 2021-11-01,Georgia,23
@@ -9106,12 +8848,10 @@ Date,Country,Arrivals
 2021-11-01,Guatemala,3
 2021-11-01,Guinea-Bissau,0
 2021-11-01,Guyana,3
-2021-11-01,H,0
 2021-11-01,Haiti,0
 2021-11-01,Honduras,0
 2021-11-01,Hong Kong,0
 2021-11-01,Hungary,63
-2021-11-01,I,0
 2021-11-01,Iceland,15
 2021-11-01,India,14236
 2021-11-01,Indonesia,806
@@ -9121,17 +8861,14 @@ Date,Country,Arrivals
 2021-11-01,Isle Of Man,0
 2021-11-01,Israel,624
 2021-11-01,Italy,313
-2021-11-01,J,0
 2021-11-01,Jamaica,2
 2021-11-01,Japan,103
 2021-11-01,Jordan,183
-2021-11-01,K,0
 2021-11-01,Kazakhstan,85
 2021-11-01,Kenya,7
 2021-11-01,Kosovo,3
 2021-11-01,Kuwait,34
 2021-11-01,Kyrgyzstan,6
-2021-11-01,L,0
 2021-11-01,Laos,0
 2021-11-01,Latvia,106
 2021-11-01,Lebanon,126
@@ -9141,7 +8878,6 @@ Date,Country,Arrivals
 2021-11-01,Liechtenstein,2
 2021-11-01,Lithuania,130
 2021-11-01,Luxembourg,19
-2021-11-01,M,0
 2021-11-01,Macedonia,6
 2021-11-01,Madagascar,5
 2021-11-01,Malawi,0
@@ -9160,7 +8896,6 @@ Date,Country,Arrivals
 2021-11-01,Morocco,20
 2021-11-01,Mozambique,0
 2021-11-01,Myanmar,9
-2021-11-01,N,0
 2021-11-01,Namibia,0
 2021-11-01,Nauru,0
 2021-11-01,Nepal,65
@@ -9169,9 +8904,7 @@ Date,Country,Arrivals
 2021-11-01,Nigeria,1
 2021-11-01,Niger,0
 2021-11-01,Norway,237
-2021-11-01,O,0
 2021-11-01,Oman,69
-2021-11-01,P,0
 2021-11-01,Pakistan,2612
 2021-11-01,Palestinian Territories,20
 2021-11-01,Panama,0
@@ -9181,14 +8914,11 @@ Date,Country,Arrivals
 2021-11-01,Philippines,116
 2021-11-01,Poland,460
 2021-11-01,Portugal,141
-2021-11-01,Q,0
 2021-11-01,Qatar,12
-2021-11-01,R,0
 2021-11-01,Zimbabwe,1
 2021-11-01,Romania,145
 2021-11-01,Russian Federation,3520
 2021-11-01,Rwanda,0
-2021-11-01,S,0
 2021-11-01,Saint Kitts And Nevis,3
 2021-11-01,Saint Lucia,1
 2021-11-01,Saint Vincent And The Grenadines,2
@@ -9213,7 +8943,6 @@ Date,Country,Arrivals
 2021-11-01,Sweden,264
 2021-11-01,Switzerland,698
 2021-11-01,Syrian Arab Republic,2
-2021-11-01,T,0
 2021-11-01,Taiwan,2
 2021-11-01,Tajikistan,1
 2021-11-01,Tanzania,2
@@ -9225,7 +8954,6 @@ Date,Country,Arrivals
 2021-11-01,Tunisia,13
 2021-11-01,Turkey,65
 2021-11-01,Turkmenistan,2
-2021-11-01,U,0
 2021-11-01,Uganda,2
 2021-11-01,Ukraine,565
 2021-11-01,United Arab Emirates,60
@@ -9233,16 +8961,12 @@ Date,Country,Arrivals
 2021-11-01,United States,1178
 2021-11-01,Uruguay,3
 2021-11-01,Uzbekistan,15
-2021-11-01,V,0
 2021-11-01,Vanuatu,3
 2021-11-01,Venezuela,2
 2021-11-01,Vietnam,8
-2021-11-01,Y,0
 2021-11-01,Yemen,26
-2021-11-01,Z,0
 2021-11-01,Zambia,0
 2021-11-01,Zimbabwe,2
-2021-12-01,A,0
 2021-12-01,Afghanistan,5
 2021-12-01,Albania,3
 2021-12-01,Algeria,21
@@ -9254,7 +8978,6 @@ Date,Country,Arrivals
 2021-12-01,Australia,3129
 2021-12-01,Austria,827
 2021-12-01,Azerbaijan,53
-2021-12-01,B,0
 2021-12-01,Bahamas,1
 2021-12-01,Bahrain,81
 2021-12-01,Bangladesh,544
@@ -9272,7 +8995,6 @@ Date,Country,Arrivals
 2021-12-01,Bulgaria,122
 2021-12-01,Burundi,0
 2021-12-01,Burkina Faso,0
-2021-12-01,C,0
 2021-12-01,Cambodia,7
 2021-12-01,Cameroon,2
 2021-12-01,Canada,1705
@@ -9290,12 +9012,10 @@ Date,Country,Arrivals
 2021-12-01,Cuba,4
 2021-12-01,Cyprus,27
 2021-12-01,Czech Republic,1087
-2021-12-01,D,0
 2021-12-01,Denmark,656
 2021-12-01,Djibouti,0
 2021-12-01,Dominica,2
 2021-12-01,Dominican Republic,0
-2021-12-01,E,0
 2021-12-01,Ecuador,2
 2021-12-01,Egypt,268
 2021-12-01,El Salvador,0
@@ -9303,12 +9023,9 @@ Date,Country,Arrivals
 2021-12-01,Eritrea,4
 2021-12-01,Estonia,260
 2021-12-01,Ethiopia,5
-2021-12-01,European Union,0
-2021-12-01,F,0
 2021-12-01,Fiji,4
 2021-12-01,Finland,195
 2021-12-01,France,3021
-2021-12-01,G,0
 2021-12-01,Gambia,0
 2021-12-01,Gabon,1
 2021-12-01,Georgia,60
@@ -9319,12 +9036,10 @@ Date,Country,Arrivals
 2021-12-01,Guatemala,0
 2021-12-01,Guinea-Bissau,0
 2021-12-01,Guyana,2
-2021-12-01,H,0
 2021-12-01,Haiti,0
 2021-12-01,Honduras,0
 2021-12-01,Hong Kong,0
 2021-12-01,Hungary,322
-2021-12-01,I,0
 2021-12-01,Iceland,18
 2021-12-01,India,23566
 2021-12-01,Indonesia,188
@@ -9334,17 +9049,14 @@ Date,Country,Arrivals
 2021-12-01,Isle Of Man,1
 2021-12-01,Israel,684
 2021-12-01,Italy,556
-2021-12-01,J,0
 2021-12-01,Jamaica,5
 2021-12-01,Japan,159
 2021-12-01,Jordan,323
-2021-12-01,K,0
 2021-12-01,Kazakhstan,2462
 2021-12-01,Kenya,21
 2021-12-01,Kosovo,1
 2021-12-01,Kuwait,98
 2021-12-01,Kyrgyzstan,67
-2021-12-01,L,0
 2021-12-01,Laos,0
 2021-12-01,Latvia,170
 2021-12-01,Lebanon,252
@@ -9354,7 +9066,6 @@ Date,Country,Arrivals
 2021-12-01,Liechtenstein,9
 2021-12-01,Lithuania,155
 2021-12-01,Luxembourg,43
-2021-12-01,M,0
 2021-12-01,Macedonia,7
 2021-12-01,Madagascar,0
 2021-12-01,Malawi,1
@@ -9373,7 +9084,6 @@ Date,Country,Arrivals
 2021-12-01,Morocco,51
 2021-12-01,Mozambique,1
 2021-12-01,Myanmar,9
-2021-12-01,N,0
 2021-12-01,Namibia,2
 2021-12-01,Nauru,0
 2021-12-01,Nepal,209
@@ -9382,9 +9092,7 @@ Date,Country,Arrivals
 2021-12-01,Nigeria,7
 2021-12-01,Niger,0
 2021-12-01,Norway,447
-2021-12-01,O,0
 2021-12-01,Oman,132
-2021-12-01,P,0
 2021-12-01,Pakistan,1004
 2021-12-01,Palestinian Territories,38
 2021-12-01,Panama,0
@@ -9394,14 +9102,11 @@ Date,Country,Arrivals
 2021-12-01,Philippines,178
 2021-12-01,Poland,1379
 2021-12-01,Portugal,134
-2021-12-01,Q,0
 2021-12-01,Qatar,12
-2021-12-01,R,0
 2021-12-01,Zimbabwe,1
 2021-12-01,Romania,581
 2021-12-01,Russian Federation,10793
 2021-12-01,Rwanda,0
-2021-12-01,S,0
 2021-12-01,Saint Kitts And Nevis,12
 2021-12-01,Saint Lucia,2
 2021-12-01,Saint Vincent And The Grenadines,0
@@ -9426,7 +9131,6 @@ Date,Country,Arrivals
 2021-12-01,Sweden,1070
 2021-12-01,Switzerland,1225
 2021-12-01,Syrian Arab Republic,0
-2021-12-01,T,0
 2021-12-01,Taiwan,19
 2021-12-01,Tajikistan,3
 2021-12-01,Tanzania,4
@@ -9438,7 +9142,6 @@ Date,Country,Arrivals
 2021-12-01,Tunisia,55
 2021-12-01,Turkey,141
 2021-12-01,Turkmenistan,1
-2021-12-01,U,0
 2021-12-01,Uganda,2
 2021-12-01,Ukraine,3562
 2021-12-01,United Arab Emirates,169
@@ -9446,20 +9149,16 @@ Date,Country,Arrivals
 2021-12-01,United States,2884
 2021-12-01,Uruguay,9
 2021-12-01,Uzbekistan,52
-2021-12-01,V,0
 2021-12-01,Vanuatu,0
 2021-12-01,Venezuela,4
 2021-12-01,Vietnam,24
-2021-12-01,Y,0
 2021-12-01,Yemen,21
-2021-12-01,Z,0
 2021-12-01,Zambia,0
 2021-12-01,Zimbabwe,4
 2022-01-01,Afghanistan,0
 2022-01-01,Albania,21
 2022-01-01,Algeria,6
 2022-01-01,Andorra,0
-2022-01-01,Antarctica,0
 2022-01-01,Angola,2
 2022-01-01,Antigua And Barbuda,2
 2022-01-01,Argentina,29
@@ -9646,7 +9345,6 @@ Date,Country,Arrivals
 2022-02-01,Albania,7
 2022-02-01,Algeria,24
 2022-02-01,Andorra,1
-2022-02-01,Antarctica,0
 2022-02-01,Angola,2
 2022-02-01,Antigua And Barbuda,0
 2022-02-01,Argentina,25
@@ -9833,7 +9531,6 @@ Date,Country,Arrivals
 2022-03-01,Albania,10
 2022-03-01,Algeria,31
 2022-03-01,Andorra,3
-2022-03-01,Antarctica,0
 2022-03-01,Angola,3
 2022-03-01,Antigua And Barbuda,3
 2022-03-01,Argentina,38
@@ -10020,7 +9717,6 @@ Date,Country,Arrivals
 2022-04-01,Albania,6
 2022-04-01,Algeria,8
 2022-04-01,Andorra,0
-2022-04-01,Antarctica,0
 2022-04-01,Angola,2
 2022-04-01,Antigua And Barbuda,1
 2022-04-01,Argentina,27
@@ -10207,7 +9903,6 @@ Date,Country,Arrivals
 2022-05-01,Albania,7
 2022-05-01,Algeria,15
 2022-05-01,Andorra,2
-2022-05-01,Antarctica,0
 2022-05-01,Angola,0
 2022-05-01,Antigua And Barbuda,2
 2022-05-01,Argentina,14
@@ -10394,7 +10089,6 @@ Date,Country,Arrivals
 2022-06-01,Albania,8
 2022-06-01,Algeria,9
 2022-06-01,Andorra,1
-2022-06-01,Antarctica,0
 2022-06-01,Angola,0
 2022-06-01,Antigua And Barbuda,1
 2022-06-01,Argentina,7
@@ -10581,7 +10275,6 @@ Date,Country,Arrivals
 2022-07-01,Albania,4
 2022-07-01,Algeria,10
 2022-07-01,Andorra,2
-2022-07-01,Antarctica,0
 2022-07-01,Angola,1
 2022-07-01,Antigua And Barbuda,1
 2022-07-01,Argentina,8
@@ -10768,7 +10461,6 @@ Date,Country,Arrivals
 2022-08-01,Albania,2
 2022-08-01,Algeria,9
 2022-08-01,Andorra,13
-2022-08-01,Antarctica,0
 2022-08-01,Angola,0
 2022-08-01,Antigua And Barbuda,2
 2022-08-01,Argentina,4
@@ -10955,7 +10647,6 @@ Date,Country,Arrivals
 2022-09-01,Albania,2
 2022-09-01,Algeria,10
 2022-09-01,Andorra,0
-2022-09-01,Antarctica,0
 2022-09-01,Angola,3
 2022-09-01,Antigua And Barbuda,0
 2022-09-01,Argentina,4
@@ -11142,7 +10833,6 @@ Date,Country,Arrivals
 2022-10-01,Albania,3
 2022-10-01,Algeria,12
 2022-10-01,Andorra,0
-2022-10-01,Antarctica,0
 2022-10-01,Angola,0
 2022-10-01,Antigua And Barbuda,1
 2022-10-01,Argentina,17
@@ -11329,7 +11019,6 @@ Date,Country,Arrivals
 2022-11-01,Albania,3
 2022-11-01,Algeria,11
 2022-11-01,Andorra,0
-2022-11-01,Antarctica,0
 2022-11-01,Angola,0
 2022-11-01,Antigua And Barbuda,2
 2022-11-01,Argentina,40
@@ -11516,7 +11205,6 @@ Date,Country,Arrivals
 2022-12-01,Albania,10
 2022-12-01,Algeria,29
 2022-12-01,Andorra,3
-2022-12-01,Antarctica,1
 2022-12-01,Angola,0
 2022-12-01,Antigua And Barbuda,1
 2022-12-01,Argentina,55
