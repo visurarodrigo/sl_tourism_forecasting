@@ -27,9 +27,9 @@ wheels/
 .ipynb_checkpoints
 
 # Data files (too large for GitHub)
+# We ignore the raw folder entirely, but allow processed/outputs
+Data/01_raw/
 Data/01_raw/Country wise data/*.xlsx
-*.csv
-!Readme.md
 
 # IDE
 .vscode/

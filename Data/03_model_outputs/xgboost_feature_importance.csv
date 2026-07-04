@@ -1,0 +1,7 @@
+Feature,Importance
+Lag_1,0.7728512
+Month,0.066221416
+Lag_12,0.049117915
+Year,0.048188087
+Rolling_Mean_3,0.040157575
+Rolling_Std_3,0.023463812
