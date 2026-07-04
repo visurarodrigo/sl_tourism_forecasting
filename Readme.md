@@ -1,4 +1,4 @@
-# 🇱🇰 Sri Lanka Tourism Forecasting — End-to-End Data Science Project
+# Sri Lanka Tourism Forecasting - End-to-End Data Science Project
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sltourismforecasting-visura.streamlit.app/)
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-blue?logo=kaggle)](https://www.kaggle.com/datasets/visurarodrigo/sri-lanka-tourism-dataset-2018-2026-may)
@@ -17,7 +17,7 @@
 
 ## 📌 Project Overview
 
-Sri Lanka's tourism sector is one of its most critical foreign exchange earners, yet it has experienced extreme volatility — from the 2019 Easter attacks, to a complete collapse during COVID-19, to a gradual recovery through 2022–2026. This project builds a full time-series forecasting pipeline on real monthly arrival data (2018–2026) to model and predict this recovery.
+Sri Lanka's tourism sector is one of its most critical foreign exchange earners, yet it has experienced extreme volatility - from the 2019 Easter attacks, to a complete collapse during COVID-19, to a gradual recovery through 2022–2026. This project builds a full time-series forecasting pipeline on real monthly arrival data (2018–2026) to model and predict this recovery.
 
 **Three forecasting approaches are compared:**
 - **SARIMA** — classical statistical model capturing trend and seasonal patterns
