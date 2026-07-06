@@ -1,0 +1,1246 @@
+Sri Lanka Tourism Forecasting Power BI Dashboard Guide
+=====================================================
+
+Project context
+---------------
+This Power BI report is the second deliverable of the flagship project. The Streamlit app should remain the exploratory and forecasting tool, while Power BI should act as the polished executive dashboard for decision-makers.
+
+What this Power BI report should do:
+- Summarize the tourism story at a glance.
+- Compare actual arrivals vs forecast outputs.
+- Show model quality and model selection logic.
+- Explain seasonality and key drivers.
+- Highlight source-market mix and concentration.
+- Give a professional, presentation-ready experience.
+
+What it should not do:
+- Recreate the Streamlit app page for page.
+- Dump raw charts without narrative.
+- Mix all analyses on one page.
+
+Recommended report structure
+----------------------------
+Use 4 pages, with an optional 5th page if you want a deeper analyst view.
+
+Page 1: Executive Overview
+Page 2: Forecast Comparison
+Page 3: Seasonality and Drivers
+Page 4: Country Mix and Market Intelligence
+Page 5: Model Governance and Method Notes (optional)
+
+Recommended semantic role for each page:
+- Page 1 = decision summary for stakeholders.
+- Page 2 = model performance and future outlook.
+- Page 3 = explain why the forecast behaves the way it does.
+- Page 4 = where arrivals are coming from and how the market is shifting.
+- Page 5 = technical reference for transparency and trust.
+
+1) Power BI data model setup
+----------------------------
+
+Files to load
+- Data/02_processed/sl_tourism_arrivals_clean.csv
+- Data/02_processed/sl_tourism_country_wise_final.csv
+- Data/03_model_outputs/forecast_sarima.csv
+- Data/03_model_outputs/forecast_prophet.csv
+- Data/03_model_outputs/forecast_xgboost.csv
+- Data/03_model_outputs/model_metrics.csv
+- Data/03_model_outputs/prophet_seasonality.csv
+- Data/03_model_outputs/xgboost_feature_importance.csv
+
+Important column shapes from your repo
+- sl_tourism_arrivals_clean.csv: Date, Arrivals
+- sl_tourism_country_wise_final.csv: Date, Country, Arrivals
+- forecast files: ds, yhat, yhat_lower, yhat_upper, model
+- model_metrics.csv: Model, RMSE, MAE, MAPE
+- prophet_seasonality.csv: ds, yearly
+- xgboost_feature_importance.csv: Feature, Importance
+
+Recommended Power Query approach
+
+Step A: Load and clean the actual arrivals table
+1. Import sl_tourism_arrivals_clean.csv.
+2. Rename the query to FactActualArrivals.
+3. Set Date to Date type.
+4. Set Arrivals to Whole Number.
+5. Add a column Source = Actual.
+6. Add a column Grain = Monthly.
+
+Step B: Load and clean the country-wise table
+1. Import sl_tourism_country_wise_final.csv.
+2. Rename the query to FactCountryArrivals.
+3. Set Date to Date type.
+4. Set Country to Text.
+5. Set Arrivals to Whole Number.
+6. Trim and clean Country text if needed.
+7. Add Source = Actual.
+
+Step C: Load and combine forecast tables
+Do not keep three separate forecast facts unless you have a specific reason to compare them as separate tables in the model layer. Instead, append them into one forecast fact table.
+
+1. Import forecast_sarima.csv, forecast_prophet.csv, and forecast_xgboost.csv.
+2. Rename them first if you want, then append all three queries.
+3. In each query:
+   - Rename ds to Date.
+   - Rename yhat to Forecast.
+   - Rename yhat_lower to Forecast Lower.
+   - Rename yhat_upper to Forecast Upper.
+   - Keep model as Model.
+4. Add a Source = Forecast column.
+5. Append into a single table named FactForecasts.
+6. Set Date to Date type.
+7. Set Forecast, Forecast Lower, and Forecast Upper to Decimal Number.
+8. Keep Model as Text.
+
+Step D: Load model metrics
+1. Import model_metrics.csv.
+2. Rename to FactModelMetrics.
+3. Set Model to Text.
+4. Set RMSE, MAE, and MAPE to Decimal Number.
+5. Optionally add a Metric Rank column later in DAX or Power Query.
+
+Step E: Load seasonality and feature importance
+1. Import prophet_seasonality.csv and rename to FactProphetSeasonality.
+2. Set ds to Date type and yearly to Decimal Number.
+3. Import xgboost_feature_importance.csv and rename to FactXGBoostImportance.
+4. Set Feature to Text and Importance to Decimal Number.
+
+Recommended model structure in Power BI
+
+Create these dimension tables:
+- DimDate
+- DimCountry
+- DimModel
+
+DimDate
+- Build a date table that spans the minimum actual date to the maximum forecast date.
+- Include at least: Date, Year, Quarter, Month Number, Month Name, Year-Month, Month Start, Weekday if you want.
+- Mark it as the Date Table.
+
+DimCountry
+- Create from FactCountryArrivals[Country].
+- Remove blanks and duplicates.
+- Optionally add Region if you decide to enrich later.
+
+DimModel
+- Create from distinct model names in FactModelMetrics or FactForecasts.
+- Contains: SARIMA, Prophet, XGBoost.
+
+Relationships
+- DimDate[Date] 1:* FactActualArrivals[Date]
+- DimDate[Date] 1:* FactCountryArrivals[Date]
+- DimDate[Date] 1:* FactForecasts[Date]
+- DimDate[Date] 1:* FactProphetSeasonality[ds]
+- DimCountry[Country] 1:* FactCountryArrivals[Country]
+- DimModel[Model] 1:* FactForecasts[Model]
+- DimModel[Model] 1:* FactModelMetrics[Model]
+
+Relationship notes
+- Keep relationships single direction from dimension to fact.
+- Avoid many-to-many relationships.
+- Keep the forecast fact separate from actuals so you can build actual vs forecast measures cleanly.
+- If you want a combined analysis table later, use DAX measures instead of physically merging actual and forecast rows.
+
+2) DAX measures you will need
+-----------------------------
+
+Base measures
+
+Total Arrivals
+- Sum of actual arrivals.
+
+```DAX
+Total Arrivals =
+SUM ( FactActualArrivals[Arrivals] )
+```
+
+Total Country Arrivals
+- Use this on country pages.
+
+```DAX
+Total Country Arrivals =
+SUM ( FactCountryArrivals[Arrivals] )
+```
+
+Forecast Arrivals
+- This measure can be filtered by model using DimModel or a slicer.
+
+```DAX
+Forecast Arrivals =
+SUM ( FactForecasts[Forecast] )
+```
+
+Forecast Lower
+
+```DAX
+Forecast Lower =
+SUM ( FactForecasts[Forecast Lower] )
+```
+
+Forecast Upper
+
+```DAX
+Forecast Upper =
+SUM ( FactForecasts[Forecast Upper] )
+```
+
+Actual Arrivals LY
+- Works after marking DimDate as the date table.
+
+```DAX
+Actual Arrivals LY =
+CALCULATE ( [Total Arrivals], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+```
+
+YoY Growth
+
+```DAX
+YoY Growth =
+[Total Arrivals] - [Actual Arrivals LY]
+```
+
+YoY Growth %
+
+```DAX
+YoY Growth % =
+DIVIDE ( [YoY Growth], [Actual Arrivals LY] )
+```
+
+Cumulative Arrivals
+- Running total over the selected date context.
+
+```DAX
+Cumulative Arrivals =
+CALCULATE (
+    [Total Arrivals],
+    FILTER (
+        ALLSELECTED ( DimDate[Date] ),
+        DimDate[Date] <= MAX ( DimDate[Date] )
+    )
+)
+```
+
+Year-to-Date Arrivals
+- Useful for 2026 progress cards.
+
+```DAX
+YTD Arrivals =
+TOTALYTD ( [Total Arrivals], DimDate[Date] )
+```
+
+Rolling 12M Arrivals
+
+```DAX
+Rolling 12M Arrivals =
+CALCULATE (
+    [Total Arrivals],
+    DATESINPERIOD ( DimDate[Date], MAX ( DimDate[Date] ), -12, MONTH )
+)
+```
+
+Forecast vs Actual Variance
+- Use for the selected model, if the model slicer is active.
+
+```DAX
+Forecast vs Actual Variance =
+[Forecast Arrivals] - [Total Arrivals]
+```
+
+Forecast vs Actual Variance %
+
+```DAX
+Forecast vs Actual Variance % =
+DIVIDE ( [Forecast vs Actual Variance], [Total Arrivals] )
+```
+
+Absolute Variance
+
+```DAX
+Absolute Variance =
+ABS ( [Forecast vs Actual Variance] )
+```
+
+Variance Direction
+- Useful for conditional formatting.
+
+```DAX
+Variance Direction =
+IF ( [Forecast vs Actual Variance] >= 0, "Above Actual", "Below Actual" )
+```
+
+Best Model by MAPE
+- Returns the model with the lowest MAPE.
+
+```DAX
+Best Model by MAPE =
+VAR BestModelTable =
+    TOPN (
+        1,
+        FactModelMetrics,
+        FactModelMetrics[MAPE], ASC
+    )
+RETURN
+    MAXX ( BestModelTable, FactModelMetrics[Model] )
+```
+
+Best MAPE
+
+```DAX
+Best MAPE =
+MIN ( FactModelMetrics[MAPE] )
+```
+
+Model Rank by MAPE
+
+```DAX
+Model Rank by MAPE =
+RANKX (
+    ALL ( FactModelMetrics[Model] ),
+    CALCULATE ( MIN ( FactModelMetrics[MAPE] ) ),
+    ,
+    ASC,
+    Dense
+)
+```
+
+Market Share %
+- Use on country page.
+
+```DAX
+Market Share % =
+DIVIDE ( [Total Country Arrivals], CALCULATE ( [Total Country Arrivals], ALL ( DimCountry ) ) )
+```
+
+Top Country Arrivals
+- Use for a top-N visual.
+
+```DAX
+Top Country Arrivals =
+CALCULATE (
+    [Total Country Arrivals],
+    KEEPFILTERS ( TOPN ( 10, ALL ( DimCountry[Country] ), [Total Country Arrivals], DESC ) )
+)
+```
+
+Seasonality Index
+- Normalize Prophet yearly seasonality around 0 so it can be read as positive/negative lift.
+
+```DAX
+Seasonality Index =
+AVERAGE ( FactProphetSeasonality[yearly] )
+```
+
+XGBoost Importance %
+- Useful as a relative ranking measure.
+
+```DAX
+XGB Importance % =
+SUM ( FactXGBoostImportance[Importance] )
+```
+
+Optional helper measures
+- Actual Arrivals Current Month
+- Forecast Arrivals Current Month
+- Forecast Error % by Month
+- 3M Moving Average
+- 12M Moving Average
+
+Full DAX catalog to create
+-------------------------
+
+Date and period measures
+
+```DAX
+Max Actual Date =
+CALCULATE ( MAX ( FactActualArrivals[Date] ), ALL ( FactActualArrivals ) )
+```
+
+```DAX
+Min Actual Date =
+CALCULATE ( MIN ( FactActualArrivals[Date] ), ALL ( FactActualArrivals ) )
+```
+
+```DAX
+Selected Year =
+SELECTEDVALUE ( DimDate[Year], YEAR ( MAX ( DimDate[Date] ) ) )
+```
+
+```DAX
+Selected Month Name =
+SELECTEDVALUE ( DimDate[Month Name] )
+```
+
+```DAX
+Current Month Arrivals =
+CALCULATE ( [Total Arrivals], LASTDATE ( DimDate[Date] ) )
+```
+
+```DAX
+Previous Month Arrivals =
+CALCULATE ( [Total Arrivals], DATEADD ( DimDate[Date], -1, MONTH ) )
+```
+
+```DAX
+Month-over-Month Growth =
+[Current Month Arrivals] - [Previous Month Arrivals]
+```
+
+```DAX
+Month-over-Month Growth % =
+DIVIDE ( [Month-over-Month Growth], [Previous Month Arrivals] )
+```
+
+```DAX
+Actual Arrivals MTD =
+TOTALMTD ( [Total Arrivals], DimDate[Date] )
+```
+
+```DAX
+Actual Arrivals QTD =
+TOTALQTD ( [Total Arrivals], DimDate[Date] )
+```
+
+```DAX
+Actual Arrivals YTD =
+TOTALYTD ( [Total Arrivals], DimDate[Date] )
+```
+
+```DAX
+Actual Arrivals Rolling 3M =
+CALCULATE (
+        [Total Arrivals],
+        DATESINPERIOD ( DimDate[Date], MAX ( DimDate[Date] ), -3, MONTH )
+)
+```
+
+```DAX
+Actual Arrivals Rolling 6M =
+CALCULATE (
+        [Total Arrivals],
+        DATESINPERIOD ( DimDate[Date], MAX ( DimDate[Date] ), -6, MONTH )
+)
+```
+
+```DAX
+Actual Arrivals Rolling 12M =
+CALCULATE (
+        [Total Arrivals],
+        DATESINPERIOD ( DimDate[Date], MAX ( DimDate[Date] ), -12, MONTH )
+)
+```
+
+```DAX
+Actual Arrivals Prior Year =
+CALCULATE ( [Total Arrivals], DATEADD ( DimDate[Date], -1, YEAR ) )
+```
+
+```DAX
+Actual Arrivals Prior Month =
+CALCULATE ( [Total Arrivals], DATEADD ( DimDate[Date], -1, MONTH ) )
+```
+
+```DAX
+Actual Arrivals Prior Quarter =
+CALCULATE ( [Total Arrivals], DATEADD ( DimDate[Date], -1, QUARTER ) )
+```
+
+Growth measures
+
+```DAX
+YoY Growth Absolute =
+[Total Arrivals] - [Actual Arrivals LY]
+```
+
+```DAX
+YoY Growth % =
+DIVIDE ( [YoY Growth Absolute], [Actual Arrivals LY] )
+```
+
+```DAX
+YoY Growth Label =
+FORMAT ( [YoY Growth %], "0.0%" )
+```
+
+```DAX
+QoQ Growth Absolute =
+[Total Arrivals] - [Actual Arrivals Prior Quarter]
+```
+
+```DAX
+QoQ Growth % =
+DIVIDE ( [QoQ Growth Absolute], [Actual Arrivals Prior Quarter] )
+```
+
+```DAX
+MoM Growth Absolute =
+[Current Month Arrivals] - [Previous Month Arrivals]
+```
+
+```DAX
+MoM Growth % =
+DIVIDE ( [MoM Growth Absolute], [Previous Month Arrivals] )
+```
+
+Forecast comparison measures
+
+```DAX
+Forecast Arrivals Selected Model =
+SUM ( FactForecasts[Forecast] )
+```
+
+```DAX
+Forecast Lower Selected Model =
+SUM ( FactForecasts[Forecast Lower] )
+```
+
+```DAX
+Forecast Upper Selected Model =
+SUM ( FactForecasts[Forecast Upper] )
+```
+
+```DAX
+Forecast Midpoint =
+([Forecast Lower Selected Model] + [Forecast Upper Selected Model]) / 2
+```
+
+```DAX
+Forecast Error =
+[Forecast Arrivals Selected Model] - [Total Arrivals]
+```
+
+```DAX
+Forecast Error % =
+DIVIDE ( [Forecast Error], [Total Arrivals] )
+```
+
+```DAX
+Forecast Error Absolute =
+ABS ( [Forecast Error] )
+```
+
+```DAX
+Forecast Accuracy % =
+1 - ABS ( DIVIDE ( [Forecast Error], [Total Arrivals] ) )
+```
+
+```DAX
+Forecast Interval Width =
+[Forecast Upper Selected Model] - [Forecast Lower Selected Model]
+```
+
+```DAX
+Forecast Interval Width % =
+DIVIDE ( [Forecast Interval Width], [Forecast Arrivals Selected Model] )
+```
+
+```DAX
+Forecast Above Actual Flag =
+IF ( [Forecast Error] >= 0, 1, 0 )
+```
+
+Model metrics and ranking measures
+
+```DAX
+Model MAPE =
+SELECTEDVALUE ( FactModelMetrics[MAPE] )
+```
+
+```DAX
+Model RMSE =
+SELECTEDVALUE ( FactModelMetrics[RMSE] )
+```
+
+```DAX
+Model MAE =
+SELECTEDVALUE ( FactModelMetrics[MAE] )
+```
+
+```DAX
+Model Rank by RMSE =
+RANKX (
+        ALL ( FactModelMetrics[Model] ),
+        CALCULATE ( MIN ( FactModelMetrics[RMSE] ) ),
+        ,
+        ASC,
+        Dense
+)
+```
+
+```DAX
+Model Rank by MAE =
+RANKX (
+        ALL ( FactModelMetrics[Model] ),
+        CALCULATE ( MIN ( FactModelMetrics[MAE] ) ),
+        ,
+        ASC,
+        Dense
+)
+```
+
+```DAX
+Model Rank by MAPE =
+RANKX (
+        ALL ( FactModelMetrics[Model] ),
+        CALCULATE ( MIN ( FactModelMetrics[MAPE] ) ),
+        ,
+        ASC,
+        Dense
+)
+```
+
+```DAX
+Best Model by MAPE =
+VAR BestModelTable =
+        TOPN (
+                1,
+                ALL ( FactModelMetrics ),
+                FactModelMetrics[MAPE], ASC
+        )
+RETURN
+        MAXX ( BestModelTable, FactModelMetrics[Model] )
+```
+
+```DAX
+Best MAPE =
+MINX ( ALL ( FactModelMetrics ), FactModelMetrics[MAPE] )
+```
+
+```DAX
+Best RMSE =
+MINX ( ALL ( FactModelMetrics ), FactModelMetrics[RMSE] )
+```
+
+```DAX
+Best MAE =
+MINX ( ALL ( FactModelMetrics ), FactModelMetrics[MAE] )
+```
+
+Country analysis measures
+
+```DAX
+Country Arrivals Share % =
+DIVIDE (
+        [Total Country Arrivals],
+        CALCULATE ( [Total Country Arrivals], ALL ( DimCountry ) )
+)
+```
+
+```DAX
+Country Rank =
+RANKX (
+        ALL ( DimCountry[Country] ),
+        [Total Country Arrivals],
+        ,
+        DESC,
+        Dense
+)
+```
+
+```DAX
+Top 10 Country Flag =
+IF ( [Country Rank] <= 10, 1, 0 )
+```
+
+```DAX
+Country YoY Growth =
+[Total Country Arrivals] - CALCULATE ( [Total Country Arrivals], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+```
+
+```DAX
+Country YoY Growth % =
+DIVIDE (
+        [Country YoY Growth],
+        CALCULATE ( [Total Country Arrivals], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+)
+```
+
+```DAX
+Selected Country Arrivals =
+CALCULATE ( [Total Country Arrivals], KEEPFILTERS ( VALUES ( DimCountry[Country] ) ) )
+```
+
+Seasonality and feature measures
+
+```DAX
+Prophet Seasonality Value =
+AVERAGE ( FactProphetSeasonality[yearly] )
+```
+
+```DAX
+Prophet Seasonality Positive =
+IF ( [Prophet Seasonality Value] > 0, [Prophet Seasonality Value], BLANK () )
+```
+
+```DAX
+Prophet Seasonality Negative =
+IF ( [Prophet Seasonality Value] < 0, [Prophet Seasonality Value], BLANK () )
+```
+
+```DAX
+XGB Feature Importance =
+SUM ( FactXGBoostImportance[Importance] )
+```
+
+```DAX
+XGB Feature Rank =
+RANKX (
+        ALL ( FactXGBoostImportance[Feature] ),
+        [XGB Feature Importance],
+        ,
+        DESC,
+        Dense
+)
+```
+
+```DAX
+XGB Feature Importance % =
+DIVIDE (
+        [XGB Feature Importance],
+        CALCULATE ( [XGB Feature Importance], ALL ( FactXGBoostImportance ) )
+)
+```
+
+Presentation measures for cards
+
+```DAX
+Latest Actual Month =
+MAX ( FactActualArrivals[Date] )
+```
+
+```DAX
+Latest Actual Arrivals =
+CALCULATE ( [Total Arrivals], DimDate[Date] = [Latest Actual Month] )
+```
+
+```DAX
+Latest Forecast Month =
+MAX ( FactForecasts[Date] )
+```
+
+```DAX
+Latest Forecast Arrivals =
+CALCULATE ( [Forecast Arrivals Selected Model], DimDate[Date] = [Latest Forecast Month] )
+```
+
+```DAX
+Latest Forecast vs Actual % =
+DIVIDE ( [Latest Forecast Arrivals] - [Latest Actual Arrivals], [Latest Actual Arrivals] )
+```
+
+Recommended formatting for measures
+- Format counts as whole numbers with thousands separators.
+- Format growth and share measures as percentages with one decimal place.
+- Format RMSE, MAE, and forecast values as whole numbers or one decimal only if your report needs precision.
+- Format Prophet seasonality and feature importance as decimal values with 2 to 4 decimals.
+
+Detailed visual build instructions
+----------------------------------
+
+Page 1: Executive Overview build recipe
+
+Canvas settings
+- Page size: 16:9.
+- Background: #F5F7FA or a very subtle off-white gradient.
+- Main title color: #0B1F33.
+- Subtitle color: #5C6670.
+
+Theme colors to use on this page
+- Primary navy: #12324A.
+- Secondary teal: #2A9D8F.
+- Accent gold: #E9C46A.
+- Positive green: #2FBF71.
+- Negative red: #D9534F.
+- Neutral gray: #AAB2BD.
+- Card background: #FFFFFF.
+- Divider line: #E3E8EE.
+
+Visual 1: KPI cards across the top
+- Card 1 field: [Total Arrivals]
+- Card 2 field: [YTD Arrivals] or [Actual Arrivals YTD]
+- Card 3 field: [YoY Growth %]
+- Card 4 field: [Best Model by MAPE] if text, or [Best MAPE] if numeric
+- Card styling:
+    - Background: white.
+    - Border radius: medium.
+    - Title font: 10 to 11 pt.
+    - Value font: 24 to 30 pt.
+    - Use the primary navy for titles and the main value.
+    - Use green for positive YoY, red for negative YoY.
+
+Visual 2: Monthly arrivals trend
+- Type: line chart.
+- X axis: DimDate[Date] or DimDate[Year-Month].
+- Y axis: [Total Arrivals].
+- Secondary line: [Actual Arrivals Rolling 12M].
+- If desired, add a third line for [Actual Arrivals Prior Year] using a lighter dotted line.
+- Colors:
+    - Actual line: #12324A.
+    - Rolling 12M line: #2A9D8F.
+    - Prior year line: #AAB2BD.
+- Format:
+    - Show markers only if the line is sparse.
+    - Use a slim stroke.
+    - Keep gridlines very light.
+
+Visual 3: YoY growth by month
+- Type: clustered column chart or line-and-column combo chart.
+- X axis: DimDate[Month Name], sorted by DimDate[Month Number].
+- Y axis: [YoY Growth Absolute] and/or [YoY Growth %].
+- Use conditional colors:
+    - Positive columns: #2FBF71.
+    - Negative columns: #D9534F.
+- Add a small reference line at 0.
+
+Visual 4: Actual vs forecast comparison
+- Type: line and shaded band if possible.
+- X axis: DimDate[Date].
+- Y axis: [Total Arrivals], [Forecast Arrivals Selected Model], [Forecast Lower Selected Model], [Forecast Upper Selected Model].
+- Visual logic:
+    - Actual line = solid navy.
+    - Forecast line = dashed teal or gold.
+    - Confidence interval = very light translucent teal fill if using area/band technique.
+- Add a slicer for model above or beside the visual.
+
+Visual 5: Insight narrative box
+- Type: text box or smart narrative.
+- Include 3 short bullets:
+    - Latest month performance.
+    - Best model summary.
+    - Any notable seasonal spike.
+- Background: light cream or white with a subtle border.
+
+Page 2: Forecast Comparison build recipe
+
+Canvas settings
+- Keep the same page background and title style as page 1.
+
+Visual 1: Model slicer
+- Field: DimModel[Model]
+- Style: horizontal chips if possible.
+- Default selected: SARIMA.
+
+Visual 2: Model metrics table
+- Table or matrix fields:
+    - FactModelMetrics[Model]
+    - FactModelMetrics[RMSE]
+    - FactModelMetrics[MAE]
+    - FactModelMetrics[MAPE]
+    - [Model Rank by MAPE]
+- Conditional formatting:
+    - Best rank = accent green or teal.
+    - Worst rank = soft red.
+    - Best MAPE value should be bold or highlighted.
+
+Visual 3: Forecast comparison line chart
+- X axis: DimDate[Date]
+- Y axis: [Forecast Arrivals Selected Model]
+- Legend: DimModel[Model] if comparing all models at once.
+- If the chart becomes crowded, use a small multiple layout instead.
+- Colors:
+    - SARIMA = #12324A
+    - Prophet = #2A9D8F
+    - XGBoost = #E9C46A
+
+Visual 4: Error summary cards
+- Card 1: [Model RMSE]
+- Card 2: [Model MAE]
+- Card 3: [Model MAPE]
+- Card 4: [Forecast Error %]
+- Use the currently selected model context.
+
+Visual 5: MAPE bar chart
+- Axis: DimModel[Model]
+- Values: FactModelMetrics[MAPE]
+- Sort ascending.
+- Best model bar should be the darkest accent; others muted.
+
+Visual 6: Forecast interval chart
+- Axis: DimDate[Date]
+- Values: [Forecast Lower Selected Model], [Forecast Arrivals Selected Model], [Forecast Upper Selected Model]
+- Use a filled area between lower and upper if possible.
+- If not, use two boundary lines and one forecast line.
+
+Page 3: Seasonality and Drivers build recipe
+
+Visual 1: Prophet seasonality curve
+- X axis: FactProphetSeasonality[ds]
+- Y axis: [Prophet Seasonality Value]
+- Color:
+    - Positive portion: #2FBF71.
+    - Negative portion: #D9534F.
+    - Baseline/line: #12324A.
+- Add a zero reference line.
+
+Visual 2: Month-of-year arrivals chart
+- Axis: DimDate[Month Name]
+- Values: [Total Arrivals]
+- Sort by DimDate[Month Number]
+- Color: primary navy.
+- Use this to show seasonal peaks.
+
+Visual 3: XGBoost feature importance bar chart
+- Axis: FactXGBoostImportance[Feature]
+- Values: [XGB Feature Importance]
+- Sort descending by importance.
+- Color scale:
+    - Top feature: #12324A
+    - Mid features: #2A9D8F
+    - Lower features: #AAB2BD
+- Include data labels.
+
+Visual 4: Interpretation notes box
+- Add a text box with 3 bullets:
+    - Lag_1 is the most important predictor.
+    - Lag_12 confirms strong annual repetition.
+    - Month and Year act as structural seasonality anchors.
+
+Page 4: Country Mix and Market Intelligence build recipe
+
+Visual 1: Country slicer
+- Field: DimCountry[Country]
+- Optional search box enabled.
+
+Visual 2: Top 10 countries bar chart
+- Axis: DimCountry[Country]
+- Values: [Total Country Arrivals]
+- Filter: Top N = 10 by [Total Country Arrivals]
+- Color: navy for the top country, muted teal for the rest.
+
+Visual 3: Country share matrix
+- Columns:
+    - DimCountry[Country]
+    - [Total Country Arrivals]
+    - [Country Arrivals Share %]
+    - [Country YoY Growth %]
+    - [Country Rank]
+- Conditional formatting:
+    - Share % heat map in soft teal.
+    - Growth % green/red based on sign.
+
+Visual 4: Map or bubble map
+- Location: DimCountry[Country]
+- Size: [Total Country Arrivals]
+- Color: [Country Arrivals Share %] or [Country YoY Growth %]
+- If map resolution is poor, replace with a treemap.
+
+Visual 5: Selected country trend
+- X axis: DimDate[Date]
+- Y axis: [Total Country Arrivals]
+- Legend: DimCountry[Country]
+- Keep to 3 to 5 countries max for readability.
+
+Page 5: Governance page build recipe
+
+Visual 1: Model metrics summary table
+- Fields: Model, RMSE, MAE, MAPE, Rank by MAPE, Rank by RMSE, Rank by MAE.
+
+Visual 2: Methodology text block
+- Mention data source, forecast horizon, and selection criterion.
+
+Visual 3: Small metadata cards
+- Actual date range.
+- Forecast date range.
+- Number of models.
+- Best model.
+
+Exact color system to use
+-------------------------
+
+Core palette
+- Navy: #12324A
+- Teal: #2A9D8F
+- Gold: #E9C46A
+- Green: #2FBF71
+- Red: #D9534F
+- Gray: #AAB2BD
+- Light background: #F5F7FA
+- White card: #FFFFFF
+- Border line: #E3E8EE
+
+Usage rules
+- Navy for primary labels, headings, and actuals.
+- Teal for forecast series and secondary highlights.
+- Gold for attention and neutral emphasis.
+- Green only for positive growth or model improvement.
+- Red only for negative growth, errors, or warnings.
+- Gray for inactive series, axes, and low-priority text.
+
+Typography and spacing
+----------------------
+- Use a modern clean font such as Aptos, Segoe UI, or the default Power BI theme font.
+- Page title size: 20 to 24 pt.
+- Subtitle size: 10 to 12 pt.
+- Card value size: 24 to 30 pt.
+- Body text size: 9 to 11 pt.
+- Keep 16 to 24 px spacing between visual containers.
+- Use consistent padding inside each visual.
+
+Power BI interactions to set
+----------------------------
+- Cross-filter the country page carefully so the map, table, and trend chart all synchronize.
+- Keep model slicer interactions active on pages 1 and 2.
+- Disable interaction between some cards and narrative boxes if they do not need filtering.
+- Use drillthrough from country summary into a country detail page only if you want an extra page later.
+
+What to format on every visual
+------------------------------
+- Hide unnecessary visual headers.
+- Turn off heavy borders.
+- Keep background transparent or white.
+- Use consistent number formatting.
+- Limit legends to 3 series where possible.
+- Use tooltips for exact values instead of cluttering charts.
+
+If you want the report to look premium, do this
+----------------------------------------------
+- Add a thin top bar with the project name on every page.
+- Add a small footer note: Sri Lanka Tourism Forecasting | Power BI Dashboard.
+- Keep the first page the strongest and cleanest.
+- Use one accent panel per page only, not many competing shapes.
+- Keep the charts story-first, not chart-first.
+
+Recommended slicers
+- Year
+- Month
+- Model
+- Country
+- Top N parameter for country list
+
+3) Report page design
+---------------------
+
+Global formatting system
+- Use one theme across all pages.
+- Keep visuals minimal, aligned, and grid-based.
+- Use a dark navy or deep blue accent, not a default corporate blue everywhere.
+- Background: very light neutral, subtle gradient, or soft texture.
+- Titles: short, factual, and consistent.
+- Use rounded card containers sparingly, not everywhere.
+- Keep one strong accent color for positive variance and one for negative variance.
+- Avoid using more than 3 primary colors.
+
+Recommended visual language
+- Actuals: solid line.
+- Forecasts: dashed line.
+- Forecast interval: light shaded band.
+- Positive growth: green or teal.
+- Negative growth: muted red or amber.
+- Best model: highlighted with a stronger accent.
+
+Page 1: Executive Overview
+Goal: give a top-level summary of arrivals, growth, and near-term outlook.
+
+Layout
+- Top row: 4 KPI cards.
+- Middle left: monthly actual arrivals trend with rolling 12M overlay.
+- Middle right: current year vs previous year growth.
+- Bottom left: actual vs forecast comparison for the selected model.
+- Bottom right: key highlights or narrative callout.
+
+Visuals
+- Card 1: Total Arrivals.
+- Card 2: YTD Arrivals.
+- Card 3: YoY Growth %.
+- Card 4: Best Model by MAPE or selected model MAPE.
+- Line chart: Date on axis, Total Arrivals and Rolling 12M Arrivals.
+- Clustered column chart: monthly YoY growth by month.
+- Line chart: actual vs forecast with confidence band.
+- Smart narrative or text box with 2-3 bullet insights.
+
+Suggested page copy
+- Sri Lanka arrivals recovered strongly after the disruption period.
+- Seasonal peaks remain concentrated in late-year and early-year travel windows.
+- SARIMA currently shows the best error profile on the supplied metrics.
+
+Formatting tips
+- Show month labels only every few ticks.
+- Use data labels only on KPIs, not on trend lines.
+- Put the growth card in an attention color when positive.
+
+Page 2: Forecast Comparison
+Goal: compare model performance and future projections.
+
+Layout
+- Top row: slicer for model and timeframe.
+- Left: model metrics table.
+- Center: forecast line chart by model.
+- Right: error summary cards.
+- Bottom: monthly forecast comparison matrix.
+
+Visuals
+- Matrix with Model, RMSE, MAE, MAPE, and Rank.
+- Clustered line chart with Date and Forecast Arrivals by model.
+- Area chart or line chart with forecast intervals.
+- Bar chart: MAPE by model.
+- Tooltip page can show date, model, lower, upper, and variance.
+
+Design note
+- This page should feel analytical and technical.
+- Highlight the best model with conditional formatting.
+- If you show all three models together, use a consistent palette: one primary, two secondary muted colors.
+
+Suggested analysis text
+- SARIMA is the most accurate on MAPE and RMSE.
+- Prophet has wider intervals and stronger long-range seasonality expression.
+- XGBoost is competitive, but not the current best performer based on the provided metrics.
+
+Page 3: Seasonality and Drivers
+Goal: explain why the forecast behaves the way it does.
+
+Layout
+- Top left: Prophet yearly seasonality curve.
+- Top right: month-of-year bar chart.
+- Bottom left: feature importance for XGBoost.
+- Bottom right: seasonal insights commentary box.
+
+Visuals
+- Line chart: ds vs yearly from prophet_seasonality.csv.
+- Bar chart: arrivals by month name across all years.
+- Horizontal bar chart: XGBoost feature importance.
+- Optional decomposition tree: arrivals by Year -> Month -> Country.
+
+Interpretation layer
+- Prophet seasonality shows recurring annual high and low periods.
+- Lag_1 dominates the XGBoost importance list, so short-term momentum is the strongest predictor.
+- Lag_12 also matters, which supports annual repetition in demand.
+
+Formatting tips
+- Sort month names by Month Number.
+- Use clear data labels only on the feature-importance bars.
+- Give the seasonality line a softer accent and a thin stroke.
+
+Page 4: Country Mix and Market Intelligence
+Goal: show where the arrivals come from and how concentration changes over time.
+
+Layout
+- Left: map or filled map if country names resolve well.
+- Center: top 10 source markets.
+- Right: market share and growth cards.
+- Bottom: country trend comparison for selected markets.
+
+Visuals
+- Filled map or bubble map by Country, using Total Country Arrivals.
+- Bar chart: Top 10 countries by arrivals.
+- Matrix: Country, total arrivals, share, YoY growth.
+- Line chart: country trend over time for a selected country or a small set of top markets.
+- Optional treemap for market concentration.
+
+Suggested measures
+- Total Country Arrivals
+- Market Share %
+- YoY Growth % by country
+- Selected Country Arrivals
+
+Design note
+- Keep this page focused on high-value markets.
+- If the map is visually messy, replace it with a ranked bar chart and a treemap.
+- Add a Top N slicer so the page stays interactive.
+
+Page 5: Model Governance and Method Notes (optional)
+Goal: make the report defensible and transparent.
+
+Visuals
+- Small table of model metrics.
+- Summary of forecast horizons.
+- Notes on preprocessing.
+- Optional watermark-style methodology panel.
+
+Content to include
+- Actuals are monthly arrivals from 2018 to 2026.
+- Country-wise table is monthly arrivals by source market.
+- Forecast tables contain model outputs and intervals.
+- SARIMA, Prophet, and XGBoost were compared using RMSE, MAE, and MAPE.
+- Best model is selected based on the lowest error, not visual preference.
+
+4) How to build it in Power BI Desktop
+-----------------------------------
+
+Suggested build order
+1. Load all CSVs into Power Query.
+2. Clean column names and types.
+3. Append forecast tables into one FactForecasts table.
+4. Create DimDate, DimCountry, and DimModel.
+5. Build relationships.
+6. Create base measures.
+7. Add calculation measures for growth, variance, and ranking.
+8. Create Page 1.
+9. Duplicate styling and create Pages 2 to 4.
+10. Add the optional governance page last.
+11. Review interactions and bookmarks.
+12. Publish to Power BI Service.
+
+Power Query hygiene checklist
+- Date columns must be Date type, not Text.
+- Arrival columns must be Whole Number or Decimal Number as appropriate.
+- Forecast confidence bounds must be numeric.
+- Remove unnecessary blank rows.
+- Standardize model names exactly as SARIMA, Prophet, and XGBoost.
+- Ensure country spellings are consistent.
+- If Power BI auto-detects relationships incorrectly, delete them and rebuild manually.
+
+5) Design polish checklist
+--------------------------
+- Keep page titles aligned in the same position on every page.
+- Add a small subtitle line for context under each main title.
+- Use the same font family, same tile spacing, and same corner radius.
+- Make the selected slicer state obvious.
+- Use one accent color for the active model.
+- Reserve red only for negative variance or warnings.
+- Avoid overcrowding: if a page has more than 6 visuals, reduce complexity.
+- Add consistent tooltips where possible.
+- Use bookmarks only if they add value, not for basic navigation.
+
+6) Publish to Power BI Service
+------------------------------
+
+Desktop publish steps
+1. Save the PBIX locally.
+2. Sign in to Power BI Desktop with your Microsoft account.
+3. Click Publish.
+4. Choose the workspace where the report should live.
+5. Wait for the upload to finish.
+6. Open the report in Power BI Service.
+
+After publishing
+- Verify that all visuals render correctly.
+- Refresh the dataset if needed.
+- Check that the date table and relationships survived publication.
+- Confirm that slicers, tooltips, and page navigation work.
+- If your organization allows it, create a dashboard from pinned tiles.
+
+Shareable link options
+- Use the standard Power BI share link for internal sharing.
+- If your tenant allows it and the content is public-safe, use Publish to web for an embeddable iframe link.
+- If you need restricted embedding, use the Power BI embed code through the workspace or app permissions.
+
+Important caution
+- Do not use Publish to web if the data should remain private.
+- For a portfolio project, a public embed is acceptable only if you are comfortable exposing the report.
+- If privacy matters, share the Power BI service link instead and add a password-protected or access-controlled document in your portfolio.
+
+7) Suggested final portfolio positioning
+---------------------------------------
+Use the Streamlit app and Power BI report as complementary deliverables:
+- Streamlit: interactive forecasting sandbox, model exploration, and experimentation.
+- Power BI: polished executive reporting, KPI summary, market mix, and stakeholder communication.
+
+That positioning makes the project feel like a complete analytics product rather than two duplicate front ends.
+
+8) Copy-ready build notes for your report description
+-----------------------------------------------------
+You can use this in your portfolio or report summary:
+
+This Power BI report presents Sri Lanka tourism arrivals through an executive dashboard, model comparison layer, seasonality analysis, and source-market intelligence view. It complements the Streamlit forecasting app by focusing on stakeholder-ready reporting, model governance, and decision support.
+
+9) Recommended deliverable checklist
+------------------------------------
+- Power BI PBIX file completed.
+- 4-page or 5-page report built.
+- Clean data model with Date, Country, and Model dimensions.
+- DAX measures for growth, cumulative totals, and variance.
+- Professional theme and consistent formatting.
+- Published to Power BI Service.
+- Shareable link or embed link documented.
+
+End of guide
+------------
